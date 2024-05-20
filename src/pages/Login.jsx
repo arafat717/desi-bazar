@@ -1,14 +1,15 @@
+import { Link } from "react-router-dom";
+
+/* eslint-disable react/no-unescaped-entities */
 const Login = () => {
   return (
     <div className="hero w-3/4 mx-auto min-h-screen bg-white">
       <div className="hero-content flex-col lg:flex-row">
         <div className="text-center lg:text-left">
-          <h1 className="text-5xl font-bold">Login now!</h1>
-          <p className="py-6">
-            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-            excepturi exercitationem quasi. In deleniti eaque aut repudiandae et
-            a id nisi.
-          </p>
+          <img
+            src="https://img.freepik.com/premium-vector/flat-illustration-design-cybersecurity_9206-2585.jpg?w=740"
+            alt="resister"
+          />
         </div>
         <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
           <form className="card-body">
@@ -42,6 +43,12 @@ const Login = () => {
             <div className="form-control mt-6">
               <button className="btn btn-primary">Login</button>
             </div>
+            <p>
+              Don't have an account?{" "}
+              <Link to="/resister" className="text-red-400">
+                Resister
+              </Link>{" "}
+            </p>
           </form>
         </div>
       </div>

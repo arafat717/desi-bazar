@@ -1,14 +1,15 @@
+import { Link } from "react-router-dom";
+
+/* eslint-disable react/no-unescaped-entities */
 const Resistration = () => {
   return (
-    <div className="hero min-h-screen bg-base-200">
-      <div className="hero-content flex-col lg:flex-row-reverse">
+    <div className="hero w-3/4 mx-auto bg-white h-screen">
+      <div className="hero-content flex-col lg:flex-row">
         <div className="text-center lg:text-left">
-          <h1 className="text-5xl font-bold">Login now!</h1>
-          <p className="py-6">
-            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-            excepturi exercitationem quasi. In deleniti eaque aut repudiandae et
-            a id nisi.
-          </p>
+          <img
+            src="https://img.freepik.com/free-vector/mobile-login-concept-illustration_114360-135.jpg?t=st=1716223861~exp=1716227461~hmac=74ed66378f6bc9e04387962aef0829cc3054a29ed632c15fb7ae1de305f4b17c&w=740"
+            alt="login"
+          />
         </div>
         <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
           <form className="card-body">
@@ -40,8 +41,14 @@ const Resistration = () => {
               </label>
             </div>
             <div className="form-control mt-6">
-              <button className="btn btn-primary">Login</button>
+              <button className="btn btn-primary">Resister</button>
             </div>
+            <p>
+              Already have an account?{" "}
+              <Link to="/login" className="text-red-400">
+                login
+              </Link>{" "}
+            </p>
           </form>
         </div>
       </div>
