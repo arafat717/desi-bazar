@@ -59,6 +59,13 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-end">
+        {user && (
+          <img
+            src={user?.photoURL}
+            alt=""
+            className={`w-12 rounded-full mr-4`}
+          />
+        )}
         {user ? (
           <Link onClick={() => logout()} className="btn bg-red-500">
             LogOut
