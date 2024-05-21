@@ -1,9 +1,11 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import GoogleLogin from "../components/loginRegistreation/GoogleLogin";
+import useAuth from "../hooks/useAuth";
 
 /* eslint-disable react/no-unescaped-entities */
 const Resistration = () => {
+  const { createUser } = useAuth();
   const [passMatch, setPassMatch] = useState(true);
 
   const handleSUbmit = (e) => {
@@ -19,7 +21,7 @@ const Resistration = () => {
     }
 
     if (password === confirm_password) {
-      console.log(email, password, confirm_password);
+      createUser(email, password);
     }
   };
   return (

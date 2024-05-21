@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
+import useAuth from "../../hooks/useAuth";
 
 const Navbar = () => {
+  const { user, logout } = useAuth();
   return (
     <div className="navbar sticky top-0 z-10 bg-gray-100 border border-gray-300">
       <div className="navbar-start">
@@ -54,9 +56,15 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        <Link to="/login" className="btn ">
-          Login
-        </Link>
+        {user ? (
+          <Link onClick={() => logout()} className="btn bg-red-500">
+            LogOut
+          </Link>
+        ) : (
+          <Link to="/login" className="btn bg-green-500">
+            Login
+          </Link>
+        )}
       </div>
     </div>
   );

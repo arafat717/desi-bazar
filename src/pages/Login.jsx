@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
 import GoogleLogin from "../components/loginRegistreation/GoogleLogin";
+import useAuth from "../hooks/useAuth";
 
 /* eslint-disable react/no-unescaped-entities */
 const Login = () => {
+  const { signIn } = useAuth();
   const handleSUbmit = async (e) => {
     e.preventDefault();
 
@@ -10,7 +12,7 @@ const Login = () => {
     const email = form.email.value;
     const password = form.password.value;
 
-    console.log(email, password);
+    signIn(email, password);
   };
   return (
     <div className="hero w-3/4 mx-auto min-h-screen bg-white">
@@ -64,7 +66,7 @@ const Login = () => {
                   <div className="mt-6">
                     <p>
                       New here?{" "}
-                      <Link to="/register" className="text-red-500">
+                      <Link to="/resister" className="text-red-500">
                         Register
                       </Link>
                     </p>
