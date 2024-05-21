@@ -1,7 +1,27 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
+import GoogleLogin from "../components/loginRegistreation/GoogleLogin";
 
 /* eslint-disable react/no-unescaped-entities */
 const Resistration = () => {
+  const [passMatch, setPassMatch] = useState(true);
+
+  const handleSUbmit = (e) => {
+    e.preventDefault();
+
+    const form = e.target;
+    const email = form.email.value;
+    const password = form.password.value;
+    const confirm_password = form.confirm_password.value;
+
+    if (password !== confirm_password) {
+      setPassMatch(false);
+    }
+
+    if (password === confirm_password) {
+      console.log(email, password, confirm_password);
+    }
+  };
   return (
     <div className="hero w-3/4 mx-auto bg-white h-screen">
       <div className="hero-content flex-col lg:flex-row">
@@ -12,43 +32,70 @@ const Resistration = () => {
           />
         </div>
         <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-          <form className="card-body">
-            <div className="form-control">
-              <label className="label">
-                <span className="label-text">Email</span>
-              </label>
-              <input
-                type="email"
-                placeholder="email"
-                className="input input-bordered"
-                required
-              />
+          <form onSubmit={handleSUbmit}>
+            <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+              <div className="card-body">
+                <div className="form-control">
+                  <label className="label">
+                    <span className="label-text">Email</span>
+                  </label>
+                  <input
+                    type="email"
+                    placeholder="email"
+                    className="input input-bordered"
+                    name="email"
+                    required
+                  />
+                </div>
+                <div className="form-control">
+                  <label className="label">
+                    <span className="label-text">Password</span>
+                  </label>
+                  <input
+                    type="password"
+                    placeholder="password"
+                    className="input input-bordered"
+                    name="password"
+                    required
+                  />
+                </div>
+                <div className="form-control">
+                  <label className="label">
+                    <span className="label-text">Confirm Password</span>
+                  </label>
+                  <input
+                    type="password"
+                    placeholder="confirm password"
+                    className="input input-bordered"
+                    name="confirm_password"
+                    required
+                  />
+                </div>
+                {!passMatch && (
+                  <div className="my-2">
+                    <p className="text-red-500">Passwords do not match!</p>
+                  </div>
+                )}
+                <div className="form-control mt-6">
+                  <input
+                    className="btn bg-red-500 text-white"
+                    type="submit"
+                    value="Register"
+                  />
+                </div>
+                <div className="mt-3">
+                  <GoogleLogin />
+                </div>
+                <div className="mt-3">
+                  <p>
+                    Already have an account?{" "}
+                    <Link to="/login" className="text-red-500">
+                      Login
+                    </Link>
+                  </p>
+                </div>
+              </div>
             </div>
-            <div className="form-control">
-              <label className="label">
-                <span className="label-text">Password</span>
-              </label>
-              <input
-                type="password"
-                placeholder="password"
-                className="input input-bordered"
-                required
-              />
-              <label className="label">
-                <a href="#" className="label-text-alt link link-hover">
-                  Forgot password?
-                </a>
-              </label>
-            </div>
-            <div className="form-control mt-6">
-              <button className="btn btn-primary">Resister</button>
-            </div>
-            <p>
-              Already have an account?{" "}
-              <Link to="/login" className="text-red-400">
-                login
-              </Link>{" "}
-            </p>
           </form>
         </div>
       </div>
