@@ -7,6 +7,7 @@ import Login from "../pages/Login";
 import Resistration from "../pages/Resistration";
 import DashboardLayout from "../components/DashboardLayout/DashboardLayout";
 import Dashboard from "../components/DashboardLayout/Dashboard";
+import PrivateRoute from "./PrivateRoute";
 
 const router = createBrowserRouter([
   {
@@ -41,7 +42,11 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/dashboard",
-        element: <Dashboard></Dashboard>,
+        element: (
+          <PrivateRoute>
+            <Dashboard></Dashboard>
+          </PrivateRoute>
+        ),
       },
     ],
   },
