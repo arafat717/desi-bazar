@@ -1,98 +1,108 @@
+/* eslint-disable react/no-unescaped-entities */
 const AllProduct = () => {
   return (
-    <div className="grid md:grid-cols-5 sm:grid-cols-4 mx-auto gap-2 px-10 my-20">
-      <div className="card w-56 bg-base-100 shadow-xl">
-        <figure>
-          <img
-            src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-            alt="Shoes"
-          />
-        </figure>
-        <div className="card-body">
-          <h2 className="card-title">
-            Shoes!
-            <div className="badge badge-secondary">NEW</div>
-          </h2>
-          <p>If a dog chews shoes whose shoes does he choose?</p>
-          <div className="card-actions justify-end">
-            <div className="badge badge-outline cursor-pointer">Fashion</div>
-            <div className="badge badge-outline cursor-pointer">Products</div>
+    <div>
+      <h1 className="px-10 mt-20 text-2xl font-semibold">
+        Best <span className="text-green-500">Vegitables</span> from us
+      </h1>
+      <hr className="w-[300px] ml-10 border border-green-300 mt-2" />
+      <div className="grid md:grid-cols-3 sm:grid-cols-2 lg:grid-cols-5 mx-auto gap-2 px-10 mt-10 mb-20">
+        <div className="card w-56 bg-base-100 shadow-xl">
+          <figure>
+            <img
+              src="https://img.freepik.com/premium-photo/one-fresh-red-tomato-isolated-white_1205-548.jpg?w=826"
+              alt="Shoes"
+            />
+          </figure>
+          <div className="card-body border border-t-orange-100">
+            <h2 className="card-title">
+              Tomato
+              <div className="badge badge-secondary">$4.45</div>
+            </h2>
+            <p>Fresh tomato directly from the farmer's market.</p>
+            <div className="flex justify-end gap-2">
+              <div className="badge badge-outline cursor-pointer">details</div>
+              <div className="badge badge-outline cursor-pointer">Add cart</div>
+            </div>
           </div>
         </div>
-      </div>
-      <div className="card w-56 bg-base-100 shadow-xl">
-        <figure>
-          <img
-            src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-            alt="Shoes"
-          />
-        </figure>
-        <div className="card-body">
-          <h2 className="card-title">
-            Shoes!
-            <div className="badge badge-secondary">NEW</div>
-          </h2>
-          <p>If a dog chews shoes whose shoes does he choose?</p>
-          <div className="card-actions justify-end">
-            <div className="badge badge-outline cursor-pointer">Fashion</div>
-            <div className="badge badge-outline cursor-pointer">Products</div>
+        <div className="card w-56 bg-base-100 shadow-xl">
+          <figure>
+            <img
+              src="https://img.freepik.com/premium-psd/carrot-isolated-alpha-layer_610539-521.jpg?w=826"
+              alt="Shoes"
+            />
+          </figure>
+          <div className="card-body border border-t-orange-100">
+            <h2 className="card-title">
+              Carrot
+              <div className="badge badge-secondary">$4.45</div>
+            </h2>
+            <p>Fresh Carrot directly from the farmer's market.</p>
+            <div className="flex justify-end gap-2">
+              <div className="badge badge-outline cursor-pointer">details</div>
+              <div className="badge badge-outline cursor-pointer">Add cart</div>
+            </div>
           </div>
         </div>
-      </div>
-      <div className="card w-56 bg-base-100 shadow-xl">
-        <figure>
-          <img
-            src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-            alt="Shoes"
-          />
-        </figure>
-        <div className="card-body">
-          <h2 className="card-title">
-            Shoes!
-            <div className="badge badge-secondary">NEW</div>
-          </h2>
-          <p>If a dog chews shoes whose shoes does he choose?</p>
-          <div className="card-actions justify-end">
-            <div className="badge badge-outline cursor-pointer">Fashion</div>
-            <div className="badge badge-outline cursor-pointer">Products</div>
+        <div className="card w-56 bg-base-100 shadow-xl">
+          <figure>
+            <img
+              src="https://img.freepik.com/free-photo/fresh-broccoli-wooden-box_176474-426.jpg?t=st=1716356309~exp=1716359909~hmac=63d5266cb87df12f29e2b1959ac522a070bf8e0947f98a2e1209efd0f1cea3e4&w=826"
+              alt="Shoes"
+            />
+          </figure>
+          <div className="card-body border border-t-orange-100">
+            <h2 className="card-title">
+              Broccoli
+              <div className="badge badge-secondary">$4.45</div>
+            </h2>
+            <p>Fresh Broccoli directly from the farmer's market.</p>
+            <div className="flex justify-end gap-2">
+              <div className="badge badge-outline cursor-pointer">details</div>
+              <div className="badge badge-outline cursor-pointer">Add cart</div>
+            </div>
           </div>
         </div>
-      </div>
-      <div className="card w-56 bg-base-100 shadow-xl">
-        <figure>
-          <img
-            src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-            alt="Shoes"
-          />
-        </figure>
-        <div className="card-body">
-          <h2 className="card-title">
-            Shoes!
-            <div className="badge badge-secondary">NEW</div>
-          </h2>
-          <p>If a dog chews shoes whose shoes does he choose?</p>
-          <div className="card-actions justify-end">
-            <div className="badge badge-outline cursor-pointer">Fashion</div>
-            <div className="badge badge-outline cursor-pointer">Products</div>
+        <div className="card w-56 bg-base-100 shadow-xl">
+          <figure>
+            <img
+              src="https://img.freepik.com/free-photo/juicy-green-sliced-spinach-leaves-lie-wooden-cutting-board-selective-focus-close-up-spinach-idea-making-breakfast-from-organic-healthy-food_166373-1823.jpg?t=st=1716356355~exp=1716359955~hmac=f8b316a2c0f43bc7b69111bf9b79b5b2b508c9705d670ebed464b5261746c6e6&w=740"
+              alt="Shoes"
+            />
+          </figure>
+          <div className="card-body border border-t-orange-100">
+            <h2 className="card-title">
+              Spinach
+              <div className="badge badge-secondary">$4.45</div>
+            </h2>
+            <p>Fresh Spinach directly from the farmer's market.</p>
+            <div className="flex justify-end gap-2">
+              <div className="badge badge-outline cursor-pointer">details</div>
+              <div className="badge badge-outline cursor-pointer">Add cart</div>
+            </div>
           </div>
         </div>
-      </div>
-      <div className="card w-56 bg-base-100 shadow-xl">
-        <figure>
-          <img
-            src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-            alt="Shoes"
-          />
-        </figure>
-        <div className="card-body">
-          <h2 className="card-title">
-            Shoes!
-            <div className="badge badge-secondary">NEW</div>
-          </h2>
-          <p>If a dog chews shoes whose shoes does he choose?</p>
-          <div className="card-actions justify-end">
-            <div className="badge badge-outline cursor-pointer">Fashion</div>
-            <div className="badge badge-outline cursor-pointer">Products</div>
+        <div className="card w-56 bg-base-100 shadow-xl">
+          <figure>
+            <img
+              src="https://img.freepik.com/free-photo/realistic-image-cauliflower-colourful-background_125540-3806.jpg?t=st=1716356393~exp=1716359993~hmac=df008dc40287aa3f8e36ef710b182bee0994dcfdaeb918574eee4cae0c3a1cc1&w=826"
+              alt="Shoes"
+            />
+          </figure>
+          <div className="card-body border border-t-orange-100">
+            <h2 className="card-title">
+              Cauliflower
+              <div className="badge badge-secondary">$4.45</div>
+            </h2>
+            <p>
+              Cauliflower grows in organic soil in the garden on the vegetable
+              area
+            </p>
+            <div className="flex justify-end gap-2">
+              <div className="badge badge-outline cursor-pointer">details</div>
+              <div className="badge badge-outline cursor-pointer">Add cart</div>
+            </div>
           </div>
         </div>
       </div>

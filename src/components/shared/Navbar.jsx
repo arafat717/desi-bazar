@@ -42,7 +42,7 @@ const Navbar = () => {
           </ul>
         </div>
         <a className="btn btn-ghost text-xl">
-          Online <span className="text-green-600">Fruties</span>
+          Daily <span className="text-green-600">Grocery</span>
         </a>
       </div>
       <div className="navbar-center hidden lg:flex">
@@ -73,11 +73,11 @@ const Navbar = () => {
           />
         )}
         {user ? (
-          <Link onClick={handleLogout} className="btn bg-red-500">
+          <Link onClick={handleLogout} className="btn btn-outline btn-error">
             LogOut
           </Link>
         ) : (
-          <Link to="/login" className="btn bg-green-500">
+          <Link to="/login" className="btn btn-outline btn-success">
             Login
           </Link>
         )}
