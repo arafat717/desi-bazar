@@ -12,7 +12,7 @@ const DairyandEggSection = () => {
           <hr className="w-[200px] ml-10 border border-green-300 mt-2" />
         </div>
         <div className="mt-5 ml-9">
-          <Link to="/fruits" className="pr-20 md:visible">
+          <Link to="/dairy" className="pr-20 md:visible">
             <button className="btn btn-outline btn-success">
               Show All Fruits
             </button>
@@ -110,12 +110,11 @@ const DairyandEggSection = () => {
           </figure>
           <div className="card-body border border-t-orange-100">
             <h2 className="card-title">
-              Butter and Margarine
+              Butter
               <div className="badge badge-secondary">$4.45</div>
             </h2>
             <p>
-              Butter and Margarine grows in organic soil in the garden on the
-              vegetable area
+              Butter grows in organic soil in the garden on the vegetable area
             </p>
             <div className="flex justify-end gap-2">
               <div className="badge badge-outline cursor-pointer">Details</div>

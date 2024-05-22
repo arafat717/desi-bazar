@@ -11,6 +11,7 @@ import ProductManagement from "../components/DashboardLayout/ProductManagement";
 import UserManagement from "../components/DashboardLayout/UserManagement";
 import AllFruits from "../pages/AllFruits";
 import AllVegitables from "../pages/AllVegitables";
+import AllDairy from "../pages/AllDairy";
 
 const router = createBrowserRouter([
   {
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
       {
         path: "/vegitables",
         element: <AllVegitables></AllVegitables>,
+      },
+      {
+        path: "/dairy",
+        element: <AllDairy></AllDairy>,
       },
       {
         path: "/contact",

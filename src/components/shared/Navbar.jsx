@@ -37,10 +37,13 @@ const Navbar = () => {
               <a>Catagory</a>
               <ul className="p-2">
                 <li>
-                  <a>Vegitables</a>
+                  <Link to="/vegitables">Vegitables</Link>
                 </li>
                 <li>
-                  <a>Fruits</a>
+                  <Link to="/fruits">Fruits</Link>
+                </li>
+                <li>
+                  <Link to="/dairy">Dairy</Link>
                 </li>
               </ul>
             </li>
@@ -73,6 +76,9 @@ const Navbar = () => {
                 </li>
                 <li>
                   <Link to="/fruits">Fruits</Link>
+                </li>
+                <li>
+                  <Link to="/dairy">Dairy</Link>
                 </li>
               </ul>
             </details>

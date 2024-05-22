@@ -7,7 +7,7 @@ const AllProduct = () => {
       <div className="md:flex justify-between items-center">
         <div>
           <h1 className="px-10 text-2xl font-bold">
-            Best <span className="text-green-500">Fruits</span> from us
+            Best <span className="text-green-500">Vegitables</span> from us
           </h1>
           <hr className="w-[200px] ml-10 border border-green-300 mt-2" />
         </div>
