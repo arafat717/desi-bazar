@@ -45,6 +45,9 @@ const Navbar = () => {
                 <li>
                   <Link to="/dairy">Dairy</Link>
                 </li>
+                <li>
+                  <Link to="/Meat">Meat and Fish</Link>
+                </li>
               </ul>
             </li>
             <li>
@@ -70,16 +73,25 @@ const Navbar = () => {
           <li>
             <details>
               <summary>Catagory</summary>
-              <ul className="w-[200px]">
-                <li>
-                  <Link to="/vegitables">Vegitables</Link>
-                </li>
-                <li>
-                  <Link to="/fruits">Fruits</Link>
-                </li>
-                <li>
-                  <Link to="/dairy">Dairy</Link>
-                </li>
+              <ul className="w-[300px]">
+                <div className="flex gap-4">
+                  <div>
+                    <li>
+                      <Link to="/vegitables">Vegitables</Link>
+                    </li>
+                    <li>
+                      <Link to="/fruits">All Fruits</Link>
+                    </li>
+                  </div>
+                  <div>
+                    <li>
+                      <Link to="/dairy">Dairy and Eggs</Link>
+                    </li>
+                    <li>
+                      <Link to="/Meat">Meat and Fish</Link>
+                    </li>
+                  </div>
+                </div>
               </ul>
             </details>
           </li>

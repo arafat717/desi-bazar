@@ -12,6 +12,7 @@ import UserManagement from "../components/DashboardLayout/UserManagement";
 import AllFruits from "../pages/AllFruits";
 import AllVegitables from "../pages/AllVegitables";
 import AllDairy from "../pages/AllDairy";
+import AllMeatandSeaFood from "../pages/AllMeatandSeaFood";
 
 const router = createBrowserRouter([
   {
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
       {
         path: "/dairy",
         element: <AllDairy></AllDairy>,
+      },
+      {
+        path: "/meat",
+        element: <AllMeatandSeaFood></AllMeatandSeaFood>,
       },
       {
         path: "/contact",
