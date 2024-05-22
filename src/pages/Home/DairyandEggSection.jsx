@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 
 /* eslint-disable react/no-unescaped-entities */
-const FruitsSection = () => {
+const DairyandEggSection = () => {
   return (
-    <div className="my-36">
+    <div className="my-28">
       <div className="md:flex justify-between items-center">
         <div>
           <h1 className="px-10 text-2xl font-bold">
@@ -23,17 +23,17 @@ const FruitsSection = () => {
         <div className="card bg-base-100 shadow-xl mt-2">
           <figure>
             <img
-              src="https://img.freepik.com/free-psd/red-fresh-apple-isolated-con-transparent-background_125540-5172.jpg?t=st=1716360329~exp=1716363929~hmac=882644e9eece7f3a7f3964c4151a0a9c30486d46d2efed1454358569192c6a79&w=826"
+              src="https://img.freepik.com/premium-photo/glass-milk-chocolate-wood-table-background-illustration-images-3d-render-ai-generated_796580-197.jpg?w=740"
               alt="Shoes"
               className="w-[400px] h-[180px]"
             />
           </figure>
           <div className="card-body border border-t-orange-100">
             <h2 className="card-title">
-              Apple
+              Milk
               <div className="badge badge-secondary">$4.45</div>
             </h2>
-            <p>Fresh Apple directly from the farmer's market.</p>
+            <p>Fresh Milk directly from the farmer's market.</p>
             <div className="flex justify-end gap-2">
               <div className="badge badge-outline cursor-pointer">Details</div>
               <div className="badge badge-outline cursor-pointer">Purchase</div>
@@ -43,17 +43,17 @@ const FruitsSection = () => {
         <div className="card bg-base-100 shadow-xl mt-2">
           <figure>
             <img
-              src="https://img.freepik.com/premium-psd/sliced-ripe-oange-fruit-isolated_253984-4571.jpg?w=740"
+              src="https://img.freepik.com/free-vector/cheese-slices-3d-realistic-vector-illustration_107791-12115.jpg?t=st=1716376262~exp=1716379862~hmac=3b0e4745296caa84f1cbdb2278c1f134b84b01bf2506986f584599e590085da5&w=740"
               alt="Shoes"
               className="w-[400px] h-[180px]"
             />
           </figure>
           <div className="card-body border border-t-orange-100">
             <h2 className="card-title">
-              Orange
+              Cheese
               <div className="badge badge-secondary">$4.45</div>
             </h2>
-            <p>Fresh Orange directly from the farmer's market.</p>
+            <p>Fresh Cheese directly from the farmer's market.</p>
             <div className="flex justify-end gap-2">
               <div className="badge badge-outline cursor-pointer">Details</div>
               <div className="badge badge-outline cursor-pointer">Purchase</div>
@@ -63,17 +63,17 @@ const FruitsSection = () => {
         <div className="card bg-base-100 shadow-xl mt-2">
           <figure>
             <img
-              src="https://img.freepik.com/free-psd/photo-whole-halved-mango-isolated-transparent-background_125540-5146.jpg?t=st=1716360457~exp=1716364057~hmac=d4f3e463ec3cf9fa9131c2bc39136a8b22744925a6359bab142684a87dd755e1&w=740"
+              src="https://img.freepik.com/free-photo/top-view-woman-eating-yogurt-bowl-with-wooden-spoon-olives-black-bread-wooden-background_141793-52123.jpg?t=st=1716376329~exp=1716379929~hmac=7477a29875f75679cc9dc91de1c7c4e364ca2c4b3f14716d2c410caf22431afa&w=826"
               alt="Shoes"
               className="w-[400px] h-[180px]"
             />
           </figure>
           <div className="card-body border border-t-orange-100">
             <h2 className="card-title">
-              Mango
+              Yogurt
               <div className="badge badge-secondary">$4.45</div>
             </h2>
-            <p>Fresh Mango directly from the farmer's market.</p>
+            <p>Fresh Yogurt directly from the farmer's market.</p>
             <div className="flex justify-end gap-2">
               <div className="badge badge-outline cursor-pointer">Details</div>
               <div className="badge badge-outline cursor-pointer">Purchase</div>
@@ -83,17 +83,17 @@ const FruitsSection = () => {
         <div className="card bg-base-100 shadow-xl mt-2">
           <figure>
             <img
-              src="https://img.freepik.com/free-photo/fresh-strawberries-wooden-table_1150-8055.jpg?t=st=1716360535~exp=1716364135~hmac=cc84810fb3e7e1d7bda459b52140621870f3817eb27e47d20e861b8017126baa&w=826"
+              src="https://img.freepik.com/free-photo/brown-eggs_2829-13455.jpg?t=st=1716376370~exp=1716379970~hmac=1907e9de9c5d2ad3c58b01c432bea6b3ddbe1e3b655932440bf362574f913fcd&w=826"
               alt="Shoes"
               className="w-[400px] h-[180px]"
             />
           </figure>
           <div className="card-body border border-t-orange-100">
             <h2 className="card-title">
-              Strawberry
+              Eggs
               <div className="badge badge-secondary">$4.45</div>
             </h2>
-            <p>Fresh Strawberry directly from the farmer's market.</p>
+            <p>Fresh Eggs directly from the farmer's market.</p>
             <div className="flex justify-end gap-2">
               <div className="badge badge-outline cursor-pointer">Details</div>
               <div className="badge badge-outline cursor-pointer">Purchase</div>
@@ -103,19 +103,19 @@ const FruitsSection = () => {
         <div className="card bg-base-100 shadow-xl mt-2">
           <figure>
             <img
-              src="https://img.freepik.com/free-photo/glass-bowl-with-pieces-watermelon_1268-33630.jpg?t=st=1716360608~exp=1716364208~hmac=4d5a44c57387331734f5a176f8828eadfc80e4a5bbe6365a7f61e514484c124d&w=740"
+              src="https://img.freepik.com/free-photo/clay-board-nest-noodles-glass-bowl-flour-blue-background_114579-46374.jpg?t=st=1716376419~exp=1716380019~hmac=369bae449d58665b157a9d9b554a3d894faac999ab54f1293adf10ad8a63c00d&w=826"
               alt="Shoes"
               className="w-[400px] h-[180px]"
             />
           </figure>
           <div className="card-body border border-t-orange-100">
             <h2 className="card-title">
-              Watermelon
+              Butter and Margarine
               <div className="badge badge-secondary">$4.45</div>
             </h2>
             <p>
-              Watermelon grows in organic soil in the garden on the vegetable
-              area
+              Butter and Margarine grows in organic soil in the garden on the
+              vegetable area
             </p>
             <div className="flex justify-end gap-2">
               <div className="badge badge-outline cursor-pointer">Details</div>
@@ -128,4 +128,4 @@ const FruitsSection = () => {
   );
 };
 
-export default FruitsSection;
+export default DairyandEggSection;

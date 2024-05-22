@@ -1,12 +1,25 @@
+import { Link } from "react-router-dom";
+
 /* eslint-disable react/no-unescaped-entities */
 const AllProduct = () => {
   return (
-    <div className="my-5">
-      <h1 className="px-10 mt-20 text-2xl font-bold">
-        Best <span className="text-green-500">Vegitables</span> from us
-      </h1>
-      <hr className="w-[300px] ml-10 border border-green-300 mt-2" />
-      <div className="grid md:grid-cols-3 sm:grid-cols-2 lg:grid-cols-5 mx-auto gap-2 px-10 mt-16 mb-20">
+    <div className="my-28">
+      <div className="md:flex justify-between items-center">
+        <div>
+          <h1 className="px-10 text-2xl font-bold">
+            Best <span className="text-green-500">Fruits</span> from us
+          </h1>
+          <hr className="w-[200px] ml-10 border border-green-300 mt-2" />
+        </div>
+        <div className="mt-5 ml-9">
+          <Link to="/vegitables" className="pr-20 md:visible">
+            <button className="btn btn-outline btn-success">
+              Show All Vegitables
+            </button>
+          </Link>
+        </div>
+      </div>
+      <div className="grid md:grid-cols-3 sm:grid-cols-2 lg:grid-cols-5 mx-auto gap-2 px-10 mt-8 mb-20">
         <div className="card bg-base-100 shadow-xl mt-3">
           <figure>
             <img
@@ -110,11 +123,6 @@ const AllProduct = () => {
             </div>
           </div>
         </div>
-      </div>
-      <div className="flex justify-center mx-auto items-center">
-        <button className="btn btn-outline btn-success">
-          Show All Vegitables
-        </button>
       </div>
     </div>
   );

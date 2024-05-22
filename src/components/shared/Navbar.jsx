@@ -34,6 +34,17 @@ const Navbar = () => {
               <Link to="/">Home</Link>
             </li>
             <li>
+              <a>Catagory</a>
+              <ul className="p-2">
+                <li>
+                  <a>Vegitables</a>
+                </li>
+                <li>
+                  <a>Fruits</a>
+                </li>
+              </ul>
+            </li>
+            <li>
               <Link to="/about">About</Link>
             </li>
             <li>
@@ -54,6 +65,19 @@ const Navbar = () => {
             <Link to="/">Home</Link>
           </li>
           <li>
+            <details>
+              <summary>Catagory</summary>
+              <ul className="w-[200px]">
+                <li>
+                  <Link to="/vegitables">Vegitables</Link>
+                </li>
+                <li>
+                  <Link to="/fruits">Fruits</Link>
+                </li>
+              </ul>
+            </details>
+          </li>
+          <li>
             <Link to="/about">About</Link>
           </li>
           <li>
@@ -72,7 +96,7 @@ const Navbar = () => {
               "https://img.freepik.com/premium-vector/person-icon-vector-design-template-user-sign-person-symbol-human-avatar-flat-style_23648-1744.jpg?w=740"
             }
             alt=""
-            className={`w-12 rounded-full mr-4`}
+            className={`w-10 rounded-full mr-4`}
           />
         )}
         {user ? (

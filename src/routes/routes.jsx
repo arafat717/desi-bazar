@@ -5,11 +5,12 @@ import About from "../pages/About/About";
 import Contact from "../pages/Contact/Contact";
 import Login from "../pages/Login";
 import Resistration from "../pages/Resistration";
-import DashboardLayout from "../components/DashboardLayout/DashboardLayout";
 import Dashboard from "../components/DashboardLayout/Dashboard";
 import PrivateRoute from "./PrivateRoute";
 import ProductManagement from "../components/DashboardLayout/ProductManagement";
 import UserManagement from "../components/DashboardLayout/UserManagement";
+import AllFruits from "../pages/AllFruits";
+import AllVegitables from "../pages/AllVegitables";
 
 const router = createBrowserRouter([
   {
@@ -23,6 +24,14 @@ const router = createBrowserRouter([
       {
         path: "/about",
         element: <About></About>,
+      },
+      {
+        path: "/fruits",
+        element: <AllFruits></AllFruits>,
+      },
+      {
+        path: "/vegitables",
+        element: <AllVegitables></AllVegitables>,
       },
       {
         path: "/contact",
@@ -40,25 +49,19 @@ const router = createBrowserRouter([
   },
   {
     path: "/dashboard",
-    element: <DashboardLayout></DashboardLayout>,
+    element: (
+      <PrivateRoute>
+        <Dashboard></Dashboard>
+      </PrivateRoute>
+    ),
     children: [
       {
-        path: "/dashboard",
-        element: (
-          <PrivateRoute>
-            <Dashboard></Dashboard>
-          </PrivateRoute>
-        ),
-        children: [
-          {
-            path: "/dashboard/product-manage",
-            element: <ProductManagement></ProductManagement>,
-          },
-          {
-            path: "/dashboard/user-manage",
-            element: <UserManagement></UserManagement>,
-          },
-        ],
+        path: "/dashboard/product-manage",
+        element: <ProductManagement></ProductManagement>,
+      },
+      {
+        path: "/dashboard/user-manage",
+        element: <UserManagement></UserManagement>,
       },
     ],
   },
