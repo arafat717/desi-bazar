@@ -1,12 +1,15 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import GoogleLogin from "../components/loginRegistreation/GoogleLogin";
 import useAuth from "../hooks/useAuth";
 
 /* eslint-disable react/no-unescaped-entities */
 const Resistration = () => {
-  const { createUser } = useAuth();
+  const { createUser, user } = useAuth();
   const [passMatch, setPassMatch] = useState(true);
+  const navigate = useNavigate();
+  const location = useLocation();
+  const from = location?.state?.from?.pathname || "/";
 
   const handleSUbmit = (e) => {
     e.preventDefault();
@@ -24,6 +27,13 @@ const Resistration = () => {
       createUser(email, password);
     }
   };
+
+  useEffect(() => {
+    if (user) {
+      navigate(from, { replace: true });
+    }
+  }, [user, from, navigate]);
+
   return (
     <div className="hero w-3/4 mx-auto bg-white h-screen">
       <div className="hero-content flex-col lg:flex-row">

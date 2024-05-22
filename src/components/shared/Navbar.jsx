@@ -3,6 +3,9 @@ import useAuth from "../../hooks/useAuth";
 
 const Navbar = () => {
   const { user, logout } = useAuth();
+  const handleLogout = async () => {
+    await logout();
+  };
   return (
     <div className="navbar sticky top-0 z-10 bg-gray-100 border border-gray-300">
       <div className="navbar-start">
@@ -61,13 +64,16 @@ const Navbar = () => {
       <div className="navbar-end">
         {user && (
           <img
-            src={user?.photoURL}
+            src={
+              user?.photoURL ||
+              "https://img.freepik.com/premium-vector/person-icon-vector-design-template-user-sign-person-symbol-human-avatar-flat-style_23648-1744.jpg?w=740"
+            }
             alt=""
             className={`w-12 rounded-full mr-4`}
           />
         )}
         {user ? (
-          <Link onClick={() => logout()} className="btn bg-red-500">
+          <Link onClick={handleLogout} className="btn bg-red-500">
             LogOut
           </Link>
         ) : (
