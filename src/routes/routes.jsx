@@ -8,6 +8,8 @@ import Resistration from "../pages/Resistration";
 import DashboardLayout from "../components/DashboardLayout/DashboardLayout";
 import Dashboard from "../components/DashboardLayout/Dashboard";
 import PrivateRoute from "./PrivateRoute";
+import ProductManagement from "../components/DashboardLayout/ProductManagement";
+import UserManagement from "../components/DashboardLayout/UserManagement";
 
 const router = createBrowserRouter([
   {
@@ -47,6 +49,16 @@ const router = createBrowserRouter([
             <Dashboard></Dashboard>
           </PrivateRoute>
         ),
+        children: [
+          {
+            path: "/dashboard/product-manage",
+            element: <ProductManagement></ProductManagement>,
+          },
+          {
+            path: "/dashboard/user-manage",
+            element: <UserManagement></UserManagement>,
+          },
+        ],
       },
     ],
   },

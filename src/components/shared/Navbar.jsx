@@ -39,6 +39,9 @@ const Navbar = () => {
             <li>
               <Link to="/contact">Contact</Link>
             </li>
+            <li>
+              <Link to="/dashboard">Dashboard</Link>
+            </li>
           </ul>
         </div>
         <a className="btn btn-ghost text-xl">
