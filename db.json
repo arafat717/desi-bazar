@@ -1,0 +1,293 @@
+{
+  "vegitables": [
+    {
+      "id": 1,
+      "name": "Tomato",
+      "price": 2.99,
+      "description": "A juicy red fruit commonly used in salads and sauces.",
+      "image": "https://img.freepik.com/premium-photo/one-fresh-red-tomato-isolated-white_1205-548.jpg?w=826"
+    },
+    {
+      "id": 2,
+      "name": "Carrot",
+      "price": 1.5,
+      "description": "A crunchy orange vegetable that is often eaten raw or cooked.",
+      "image": "https://img.freepik.com/premium-psd/carrot-isolated-alpha-layer_610539-521.jpg?w=826"
+    },
+    {
+      "id": 3,
+      "name": "Broccoli",
+      "price": 1.75,
+      "description": "A green vegetable that is rich in vitamins and minerals.",
+      "image": "https://img.freepik.com/free-photo/fresh-broccoli-wooden-box_176474-426.jpg?t=st=1716356309~exp=1716359909~hmac=63d5266cb87df12f29e2b1959ac522a070bf8e0947f98a2e1209efd0f1cea3e4&w=826"
+    },
+    {
+      "id": 4,
+      "name": "Spinach",
+      "price": 2.0,
+      "description": "A leafy green vegetable that is high in iron and other nutrients.",
+      "image": "https://img.freepik.com/free-photo/juicy-green-sliced-spinach-leaves-lie-wooden-cutting-board-selective-focus-close-up-spinach-idea-making-breakfast-from-organic-healthy-food_166373-1823.jpg?t=st=1716356355~exp=1716359955~hmac=f8b316a2c0f43bc7b69111bf9b79b5b2b508c9705d670ebed464b5261746c6e6&w=740"
+    },
+    {
+      "id": 5,
+      "name": "Potato",
+      "price": 0.99,
+      "description": "A starchy tuber that is a staple in many diets around the world.",
+      "image": "https://img.freepik.com/free-photo/realistic-image-cauliflower-colourful-background_125540-3806.jpg?t=st=1716356393~exp=1716359993~hmac=df008dc40287aa3f8e36ef710b182bee0994dcfdaeb918574eee4cae0c3a1cc1&w=826"
+    },
+    {
+      "id": 6,
+      "name": "Bell Pepper",
+      "price": 3.49,
+      "description": "A colorful vegetable that can be red, green, yellow, or orange, known for its sweet flavor.",
+      "image": "https://img.freepik.com/premium-photo/one-fresh-red-tomato-isolated-white_1205-548.jpg?w=826"
+    },
+    {
+      "id": 7,
+      "name": "Cucumber",
+      "price": 1.25,
+      "description": "A refreshing green vegetable that is often used in salads and sandwiches.",
+      "image": "https://img.freepik.com/free-photo/juicy-green-sliced-spinach-leaves-lie-wooden-cutting-board-selective-focus-close-up-spinach-idea-making-breakfast-from-organic-healthy-food_166373-1823.jpg?t=st=1716356355~exp=1716359955~hmac=f8b316a2c0f43bc7b69111bf9b79b5b2b508c9705d670ebed464b5261746c6e6&w=740"
+    },
+    {
+      "id": 8,
+      "name": "Zucchini",
+      "price": 2.1,
+      "description": "A versatile green vegetable that can be grilled, baked, or sautéed.",
+      "image": "https://img.freepik.com/free-photo/fresh-broccoli-wooden-box_176474-426.jpg?t=st=1716356309~exp=1716359909~hmac=63d5266cb87df12f29e2b1959ac522a070bf8e0947f98a2e1209efd0f1cea3e4&w=826"
+    },
+    {
+      "id": 9,
+      "name": "Eggplant",
+      "price": 2.89,
+      "description": "A purple vegetable that is commonly used in dishes like ratatouille and eggplant Parmesan.",
+      "image": "https://img.freepik.com/premium-psd/carrot-isolated-alpha-layer_610539-521.jpg?w=826"
+    },
+    {
+      "id": 10,
+      "name": "Lettuce",
+      "price": 1.99,
+      "description": "A leafy green vegetable that is a staple in salads.",
+      "image": "https://img.freepik.com/free-photo/realistic-image-cauliflower-colourful-background_125540-3806.jpg?t=st=1716356393~exp=1716359993~hmac=df008dc40287aa3f8e36ef710b182bee0994dcfdaeb918574eee4cae0c3a1cc1&w=826"
+    }
+  ],
+  "fruits": [
+    {
+      "id": 1,
+      "name": "Apple",
+      "price": 3.0,
+      "description": "A crisp, sweet fruit that is great for snacking and baking.",
+      "image": "https://img.freepik.com/free-psd/red-fresh-apple-isolated-con-transparent-background_125540-5172.jpg?t=st=1716360329~exp=1716363929~hmac=882644e9eece7f3a7f3964c4151a0a9c30486d46d2efed1454358569192c6a79&w=826"
+    },
+    {
+      "id": 2,
+      "name": "Banana",
+      "price": 1.2,
+      "description": "A tropical fruit that is high in potassium and perfect for smoothies.",
+      "image": "https://img.freepik.com/free-psd/photo-two-bananas-isolated-transparent-background_125540-5165.jpg?t=st=1716653834~exp=1716657434~hmac=fb96b6adf2b593e44bb74feade545f42ee6e387a974e905ee1f3dbf6fe16ef27&w=826"
+    },
+    {
+      "id": 3,
+      "name": "Orange",
+      "price": 2.5,
+      "description": "A juicy citrus fruit that is a good source of vitamin C.",
+      "image": "https://img.freepik.com/premium-psd/sliced-ripe-oange-fruit-isolated_253984-4571.jpg?w=740"
+    },
+    {
+      "id": 4,
+      "name": "Strawberry",
+      "price": 4.0,
+      "description": "A sweet red berry that is delicious in desserts and salads.",
+      "image": "https://img.freepik.com/free-photo/fresh-strawberries-wooden-table_1150-8055.jpg?t=st=1716360535~exp=1716364135~hmac=cc84810fb3e7e1d7bda459b52140621870f3817eb27e47d20e861b8017126baa&w=826"
+    },
+    {
+      "id": 5,
+      "name": "Grapes",
+      "price": 3.75,
+      "description": "A small, sweet fruit that comes in green, red, or purple varieties.",
+      "image": "https://img.freepik.com/premium-photo/red-grapes-organic-vineyard_38816-1899.jpg?w=826"
+    },
+    {
+      "id": 6,
+      "name": "Pineapple",
+      "price": 5.0,
+      "description": "A tropical fruit with a spiky exterior and sweet, juicy interior.",
+      "image": "https://img.freepik.com/free-psd/photo-pineapple-isolated-transparent-background_125540-5142.jpg?t=st=1716653922~exp=1716657522~hmac=02cae70ee0d833b19fd2f876986141acb703d0c9a77d2a938d4bb2fa6b94bcd7&w=826"
+    },
+    {
+      "id": 7,
+      "name": "Mango",
+      "price": 2.99,
+      "description": "A sweet, juicy fruit that is perfect for smoothies and desserts.",
+      "image": "https://img.freepik.com/free-psd/photo-whole-halved-mango-isolated-transparent-background_125540-5146.jpg?t=st=1716360457~exp=1716364057~hmac=d4f3e463ec3cf9fa9131c2bc39136a8b22744925a6359bab142684a87dd755e1&w=740"
+    },
+    {
+      "id": 8,
+      "name": "Blueberry",
+      "price": 4.5,
+      "description": "A small, sweet, and tangy berry that is high in antioxidants.",
+      "image": "https://img.freepik.com/free-photo/background-leaves-food-closeup-red_1417-444.jpg?t=st=1716653969~exp=1716657569~hmac=036be3b591bbaa33365e84756f5289d123a7cc2d9f600c611b86c71ad5c1f091&w=826"
+    },
+    {
+      "id": 9,
+      "name": "Watermelon",
+      "price": 7.0,
+      "description": "A large, juicy fruit that is perfect for hot summer days.",
+      "image": "https://img.freepik.com/free-photo/glass-bowl-with-pieces-watermelon_1268-33630.jpg?t=st=1716360608~exp=1716364208~hmac=4d5a44c57387331734f5a176f8828eadfc80e4a5bbe6365a7f61e514484c124d&w=740"
+    },
+    {
+      "id": 10,
+      "name": "Peach",
+      "price": 3.25,
+      "description": "A sweet and juicy fruit with a soft, fuzzy skin.",
+      "image": "https://img.freepik.com/free-photo/fresh-yellow-apricots-isolated-white_114579-10486.jpg?t=st=1716654015~exp=1716657615~hmac=3f9461b471ed654794e3d192c890d8a1d1baac1af2354b8b69857843479138af&w=826"
+    }
+  ],
+  "egg": [
+    {
+      "id": 1,
+      "name": "Chicken",
+      "price": 5.99,
+      "description": "A lean cut of chicken that is high in protein and versatile for cooking.",
+      "image": "https://img.freepik.com/free-photo/raw-chicken-with-spices-herbs-wooden-board-blue_114579-16396.jpg?t=st=1716392217~exp=1716395817~hmac=9d6773b902e82266d6358766de2aff31f218943af154fa713092c3c73a40b989&w=826"
+    },
+    {
+      "id": 2,
+      "name": "Deli Meats",
+      "price": 4.99,
+      "description": "A popular choice for making burgers, tacos, and meatloaf.",
+      "image": "https://img.freepik.com/free-photo/closeup-shot-slices-sausages-with-green-lettuce-wooden-board_181624-38741.jpg?t=st=1716392402~exp=1716396002~hmac=6050e1b8c90bc4a40cb23f7c2ae61a3e1c934699e743de6634a61fee4ac6ed83&w=826"
+    },
+    {
+      "id": 3,
+      "name": "Pork Chops",
+      "price": 6.5,
+      "description": "Tender and flavorful, these are great for grilling or baking.",
+      "image": "https://img.freepik.com/free-photo/roasted-pork-steak-dark-surface_1150-44350.jpg?t=st=1716654960~exp=1716658560~hmac=91023176113ce836b9891713a1fa04285ddf2cf88c112c4dd96312ed6fa92759&w=826"
+    },
+    {
+      "id": 4,
+      "name": "Ribeye Steak",
+      "price": 15.99,
+      "description": "A juicy and marbled cut of beef, perfect for grilling or pan-searing.",
+      "image": "https://example.com/images/ribeye_steak.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Bacon",
+      "price": 7.0,
+      "description": "A crispy and savory addition to breakfasts and sandwiches.",
+      "image": "https://example.com/images/bacon.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Salmon Fillet",
+      "price": 12.99,
+      "description": "A rich and flavorful fish that is high in omega-3 fatty acids.",
+      "image": "https://img.freepik.com/free-photo/arrangement-various-types-fish-copy-space_23-2148637896.jpg?t=st=1716392479~exp=1716396079~hmac=adda5a2746f5cffe340e83c2c830623b4ac5a60db70d565784653b3d5998deff&w=826"
+    },
+    {
+      "id": 7,
+      "name": "Shrimp",
+      "price": 9.99,
+      "description": "Versatile seafood that can be grilled, sautéed, or added to pasta.",
+      "image": "https://example.com/images/shrimp.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Tuna Steak",
+      "price": 18.99,
+      "description": "A firm and flavorful fish that is excellent when seared or grilled.",
+      "image": "https://example.com/images/tuna_steak.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Meat",
+      "price": 22.5,
+      "description": "Sweet and succulent, these are a favorite at seafood feasts.",
+      "image": "https://img.freepik.com/premium-photo/wooden-cutting-board-topped-with-meat-vegetables_662214-195672.jpg?w=826"
+    },
+    {
+      "id": 10,
+      "name": "Fish",
+      "price": 25.99,
+      "description": "A luxurious seafood choice, perfect for special occasions.",
+      "image": "https://img.freepik.com/free-photo/top-view-fresh-fish-slices-with-tomatoes-dark-blue-background_179666-22567.jpg?t=st=1716392263~exp=1716395863~hmac=ad75129dd8e125c9023694bf7555a10514cd5a055048255341e5fa2d8c19cc43&w=826"
+    }
+  ],
+  "dairy": [
+    {
+      "id": 1,
+      "name": "Milk",
+      "price": 2.5,
+      "description": "A staple dairy product that is rich in calcium and vitamin D.",
+      "image": "https://img.freepik.com/premium-photo/glass-milk-chocolate-wood-table-background-illustration-images-3d-render-ai-generated_796580-197.jpg?w=740"
+    },
+    {
+      "id": 2,
+      "name": "Cheddar Cheese",
+      "price": 5.0,
+      "description": "A popular cheese known for its rich, creamy texture and sharp flavor.",
+      "image": "https://img.freepik.com/free-vector/cheese-slices-3d-realistic-vector-illustration_107791-12115.jpg?t=st=1716376262~exp=1716379862~hmac=3b0e4745296caa84f1cbdb2278c1f134b84b01bf2506986f584599e590085da5&w=740"
+    },
+    {
+      "id": 3,
+      "name": "Yogurt",
+      "price": 1.5,
+      "description": "A creamy dairy product that is often enjoyed with fruit or granola.",
+      "image": "https://img.freepik.com/free-photo/top-view-woman-eating-yogurt-bowl-with-wooden-spoon-olives-black-bread-wooden-background_141793-52123.jpg?t=st=1716376329~exp=1716379929~hmac=7477a29875f75679cc9dc91de1c7c4e364ca2c4b3f14716d2c410caf22431afa&w=826"
+    },
+    {
+      "id": 4,
+      "name": "Butter",
+      "price": 3.75,
+      "description": "A dairy product made from churned cream, used in cooking and baking.",
+      "image": "https://img.freepik.com/free-photo/clay-board-nest-noodles-glass-bowl-flour-blue-background_114579-46374.jpg?t=st=1716376419~exp=1716380019~hmac=369bae449d58665b157a9d9b554a3d894faac999ab54f1293adf10ad8a63c00d&w=826"
+    },
+    {
+      "id": 5,
+      "name": "Egg",
+      "price": 2.99,
+      "description": "A soft cheese with a mild flavor, commonly used as a spread or in recipes.",
+      "image": "https://img.freepik.com/free-photo/brown-eggs_2829-13455.jpg?t=st=1716376370~exp=1716379970~hmac=1907e9de9c5d2ad3c58b01c432bea6b3ddbe1e3b655932440bf362574f913fcd&w=826"
+    },
+    {
+      "id": 6,
+      "name": "Cottage Cheese",
+      "price": 3.25,
+      "description": "A fresh cheese with a mild flavor and a slightly grainy texture.",
+      "image": "https://img.freepik.com/free-photo/dish-full-cottage-cheese_23-2148211384.jpg?t=st=1716654460~exp=1716658060~hmac=3e235299837ef5d16d2d4bded0c88206928535877c16702b2b8d9c71b0075f65&w=740"
+    },
+    {
+      "id": 7,
+      "name": "Sour Cream",
+      "price": 2.5,
+      "description": "A tangy dairy product often used as a topping for baked potatoes or tacos.",
+      "image": "https://img.freepik.com/free-photo/avocado-avocado-yogurt-products-made-from-avocado-food-nutrition-concept_1150-26287.jpg?t=st=1716654496~exp=1716658096~hmac=863e3f657848f359495acc9c9bad201dce0e3f939448c1406a03922200889c9f&w=826"
+    },
+    {
+      "id": 8,
+      "name": "Mozzarella Cheese",
+      "price": 4.5,
+      "description": "A soft cheese that melts well, often used on pizzas and in Italian dishes.",
+      "image": "https://img.freepik.com/premium-photo/mozzarella-cheese-wooden-bowl_92695-1305.jpg?w=740"
+    },
+    {
+      "id": 9,
+      "name": "Heavy Cream",
+      "price": 3.99,
+      "description": "A thick, rich cream used in cooking, baking, and making whipped cream.",
+      "image": "https://img.freepik.com/free-vector/3d-white-isolated-cake-cream-ice-whip-swirl-vector-soft-vanilla-foam-decoration-pie-food-cupcake-sweet-frozen-realistic-whipped-butter-mousse-curl-top-pack-decorating-confectionery-twirl_107791-23200.jpg?t=st=1716654577~exp=1716658177~hmac=091b71e460d2293d58d115c6395f90871160a80ad05c6586fb47d0362b61b755&w=740"
+    },
+    {
+      "id": 10,
+      "name": "Greek Yogurt",
+      "price": 2.0,
+      "description": "A thick, creamy yogurt that is high in protein and often enjoyed with honey or fruit.",
+      "image": "https://img.freepik.com/free-photo/bowl-oat-granola-with-yogurt-fresh-mulberry-strawberries-kiwi-mint-nuts-black-rock-board-healthy-breakfast-top-view-copy-space-flat-lay-healthy-breakfast-menu-concept_1150-45821.jpg?t=st=1716654615~exp=1716658215~hmac=0eddb9b23566c79e29fd8093ca509b0948e9fd5db72b010c23692ced43c8206c&w=826"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
