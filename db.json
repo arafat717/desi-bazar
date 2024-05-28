@@ -170,14 +170,14 @@
       "name": "Ribeye Steak",
       "price": 15.99,
       "description": "A juicy and marbled cut of beef, perfect for grilling or pan-searing.",
-      "image": "https://example.com/images/ribeye_steak.jpg"
+      "image": "https://img.freepik.com/free-photo/top-view-fresh-fish-slices-with-tomatoes-dark-blue-background_179666-22567.jpg?t=st=1716392263~exp=1716395863~hmac=ad75129dd8e125c9023694bf7555a10514cd5a055048255341e5fa2d8c19cc43&w=826"
     },
     {
       "id": 5,
       "name": "Bacon",
       "price": 7.0,
       "description": "A crispy and savory addition to breakfasts and sandwiches.",
-      "image": "https://example.com/images/bacon.jpg"
+      "image": "https://img.freepik.com/free-photo/raw-chicken-with-spices-herbs-wooden-board-blue_114579-16396.jpg?t=st=1716392217~exp=1716395817~hmac=9d6773b902e82266d6358766de2aff31f218943af154fa713092c3c73a40b989&w=826"
     },
     {
       "id": 6,
@@ -191,14 +191,14 @@
       "name": "Shrimp",
       "price": 9.99,
       "description": "Versatile seafood that can be grilled, sautéed, or added to pasta.",
-      "image": "https://example.com/images/shrimp.jpg"
+      "image": "https://img.freepik.com/free-photo/raw-chicken-with-spices-herbs-wooden-board-blue_114579-16396.jpg?t=st=1716392217~exp=1716395817~hmac=9d6773b902e82266d6358766de2aff31f218943af154fa713092c3c73a40b989&w=826"
     },
     {
       "id": 8,
       "name": "Tuna Steak",
       "price": 18.99,
       "description": "A firm and flavorful fish that is excellent when seared or grilled.",
-      "image": "https://example.com/images/tuna_steak.jpg"
+      "image": "https://img.freepik.com/free-photo/top-view-fresh-fish-slices-with-tomatoes-dark-blue-background_179666-22567.jpg?t=st=1716392263~exp=1716395863~hmac=ad75129dd8e125c9023694bf7555a10514cd5a055048255341e5fa2d8c19cc43&w=826"
     },
     {
       "id": 9,
