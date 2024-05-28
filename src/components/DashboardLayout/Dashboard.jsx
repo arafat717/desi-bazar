@@ -23,8 +23,18 @@ const Dashboard = () => {
         <ul className="menu p-4 w-80 min-h-full bg-gray-200 text-base-content">
           {/* Sidebar content here */}
           <h1 className="text-2xl font-bold">Welcome Dashboard</h1>
+          <p className="mt-6 font-bold">Manage All Products</p>
           <li>
-            <Link to="/dashboard/product-manage">Product-Manage</Link>
+            <Link to="/dashboard/fruits-manage">Fruits-Manage</Link>
+          </li>
+          <li>
+            <Link to="/dashboard/dairy-manage">Dairy-Manage</Link>
+          </li>
+          <li>
+            <Link to="/dashboard/vegitables-manage">Vegitables-Manage</Link>
+          </li>
+          <li>
+            <Link to="/dashboard/meat-manage">Meat-Manage</Link>
           </li>
           <li>
             <Link to="/dashboard/user-manage">User-Manage</Link>
