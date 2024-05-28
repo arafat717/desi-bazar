@@ -12,6 +12,7 @@ const FrutiesManage = () => {
   console.log(seaFood);
   return (
     <div className="w-full">
+      <h1 className="font-bold text-center text-2xl mb-5">Fruits</h1>
       <Table data={seaFood}></Table>
     </div>
   );

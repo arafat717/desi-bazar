@@ -7,7 +7,6 @@ import Login from "../pages/Login";
 import Resistration from "../pages/Resistration";
 import Dashboard from "../components/DashboardLayout/Dashboard";
 import PrivateRoute from "./PrivateRoute";
-import ProductManagement from "../components/DashboardLayout/ProductManagement";
 import UserManagement from "../components/DashboardLayout/UserManagement";
 import AllFruits from "../pages/AllFruits";
 import AllVegitables from "../pages/AllVegitables";
@@ -94,10 +93,6 @@ const router = createBrowserRouter([
       </PrivateRoute>
     ),
     children: [
-      {
-        path: "/dashboard/product-manage",
-        element: <ProductManagement></ProductManagement>,
-      },
       {
         path: "/dashboard/fruits-manage",
         element: <FrutiesManage></FrutiesManage>,
