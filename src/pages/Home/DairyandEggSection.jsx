@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import Card from "../../components/Ui/Card";
+import DairyCard from "../../components/Ui/DairyCard";
 
 /* eslint-disable react/no-unescaped-entities */
 const DairyandEggSection = () => {
@@ -32,7 +32,7 @@ const DairyandEggSection = () => {
         {seaFood &&
           seaFood
             .slice(0, 5)
-            .map((food) => <Card key={food.id} food={food}></Card>)}
+            .map((food) => <DairyCard key={food.id} food={food}></DairyCard>)}
       </div>
     </div>
   );

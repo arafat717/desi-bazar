@@ -13,6 +13,7 @@ import AllFruits from "../pages/AllFruits";
 import AllVegitables from "../pages/AllVegitables";
 import AllDairy from "../pages/AllDairy";
 import AllMeatandSeaFood from "../pages/AllMeatandSeaFood";
+import DetailsPage from "../pages/DetailsPage";
 
 const router = createBrowserRouter([
   {
@@ -46,6 +47,30 @@ const router = createBrowserRouter([
       {
         path: "/contact",
         element: <Contact></Contact>,
+      },
+      {
+        path: "fruits/:id",
+        element: <DetailsPage></DetailsPage>,
+        loader: ({ params }) =>
+          fetch(`http://localhost:3000/fruits/${params.id}`),
+      },
+      {
+        path: "vegitables/:id",
+        element: <DetailsPage></DetailsPage>,
+        loader: ({ params }) =>
+          fetch(`http://localhost:3000/vegitables/${params.id}`),
+      },
+
+      {
+        path: "dairy/:id",
+        element: <DetailsPage></DetailsPage>,
+        loader: ({ params }) =>
+          fetch(`http://localhost:3000/dairy/${params.id}`),
+      },
+      {
+        path: "egg/:id",
+        element: <DetailsPage></DetailsPage>,
+        loader: ({ params }) => fetch(`http://localhost:3000/egg/${params.id}`),
       },
       {
         path: "/login",

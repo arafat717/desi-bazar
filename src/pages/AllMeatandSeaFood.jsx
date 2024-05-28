@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Card from "../components/Ui/Card";
+import MeatCard from "../components/Ui/MeatCard";
 
 /* eslint-disable react/no-unescaped-entities */
 const AllMeatandSeaFood = () => {
@@ -19,7 +19,9 @@ const AllMeatandSeaFood = () => {
 
       <div className="grid md:grid-cols-3 sm:grid-cols-2 lg:grid-cols-5 mx-auto gap-2 mt-16 mb-20 px-10">
         {seaFood &&
-          seaFood.map((food) => <Card key={food.id} food={food}></Card>)}
+          seaFood.map((food) => (
+            <MeatCard key={food.id} food={food}></MeatCard>
+          ))}
       </div>
     </div>
   );

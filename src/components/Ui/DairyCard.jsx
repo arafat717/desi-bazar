@@ -2,8 +2,7 @@
 
 import { Link } from "react-router-dom";
 
-/* eslint-disable react/no-unescaped-entities */
-const Card = ({ food }) => {
+const DairyCard = ({ food }) => {
   return (
     <div className="card bg-base-100 shadow-xl mt-2">
       <figure>
@@ -17,7 +16,7 @@ const Card = ({ food }) => {
         <p>{food.description}</p>
         <div className="flex justify-end gap-2">
           <div className="badge badge-outline cursor-pointer">
-            <Link to={`/vegitables/${food.id}`}>Details</Link>
+            <Link to={`/dairy/${food.id}`}>Details</Link>
           </div>
           <div className="badge badge-outline cursor-pointer">Purchase</div>
         </div>
@@ -26,4 +25,4 @@ const Card = ({ food }) => {
   );
 };
 
-export default Card;
+export default DairyCard;
