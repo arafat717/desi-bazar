@@ -5,7 +5,7 @@ const MeatManage = () => {
   const [seaFood, setSeaFood] = useState();
 
   useEffect(() => {
-    fetch("http://localhost:3000/vegitables")
+    fetch("http://localhost:3000/egg")
       .then((res) => res.json())
       .then((data) => setSeaFood(data));
   }, []);

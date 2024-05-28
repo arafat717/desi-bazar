@@ -69,6 +69,20 @@
       "price": 1.99,
       "description": "A leafy green vegetable that is a staple in salads.",
       "image": "https://img.freepik.com/free-photo/realistic-image-cauliflower-colourful-background_125540-3806.jpg?t=st=1716356393~exp=1716359993~hmac=df008dc40287aa3f8e36ef710b182bee0994dcfdaeb918574eee4cae0c3a1cc1&w=826"
+    },
+    {
+      "id": "11",
+      "name": "MD.REZAUL KARIM",
+      "price": "10",
+      "description": "asdfas",
+      "image": "https://img.freepik.com/free-photo/green-striped-ripe-watermelon-with-slice-cross-section-isolated-white-background-with-copy-space-text-images-special-kind-berry-sweet-pink-flesh-with-black-seeds-side-view_639032-1254.jpg?t=st=1716908653~exp=1716912253~hmac=4228b172ad0aa1c846f5c1ea455c48633e75605c29fe8f8c9e4c05249112768c&w=826"
+    },
+    {
+      "id": "12",
+      "name": "jibon",
+      "price": "10",
+      "description": "gtfsdrtgs",
+      "image": "https://img.freepik.com/free-photo/green-striped-ripe-watermelon-with-slice-cross-section-isolated-white-background-with-copy-space-text-images-special-kind-berry-sweet-pink-flesh-with-black-seeds-side-view_639032-1254.jpg?t=st=1716908653~exp=1716912253~hmac=4228b172ad0aa1c846f5c1ea455c48633e75605c29fe8f8c9e4c05249112768c&w=826"
     }
   ],
   "fruits": [
@@ -220,6 +234,13 @@
       "price": 25.99,
       "description": "A luxurious seafood choice, perfect for special occasions.",
       "image": "https://img.freepik.com/free-photo/top-view-fresh-fish-slices-with-tomatoes-dark-blue-background_179666-22567.jpg?t=st=1716392263~exp=1716395863~hmac=ad75129dd8e125c9023694bf7555a10514cd5a055048255341e5fa2d8c19cc43&w=826"
+    },
+    {
+      "id": "11",
+      "name": "arafat jibon",
+      "price": "10",
+      "description": "ghsdfgsdaf",
+      "image": "https://img.freepik.com/free-photo/industrial-park-factory-building-warehouse_1417-1918.jpg?t=st=1690078824~exp=1690079424~hmac=ddc47e019ee0fd2394ba74672f561ceef2c761fa1cb863e65addf1c61ddf6d52"
     }
   ],
   "dairy": [
@@ -292,6 +313,13 @@
       "price": 2,
       "description": "A thick, creamy yogurt that is high in protein and often enjoyed with honey or fruit.",
       "image": "https://img.freepik.com/free-photo/bowl-oat-granola-with-yogurt-fresh-mulberry-strawberries-kiwi-mint-nuts-black-rock-board-healthy-breakfast-top-view-copy-space-flat-lay-healthy-breakfast-menu-concept_1150-45821.jpg?t=st=1716654615~exp=1716658215~hmac=0eddb9b23566c79e29fd8093ca509b0948e9fd5db72b010c23692ced43c8206c&w=826"
+    },
+    {
+      "id": "11",
+      "name": "arafat",
+      "price": "62",
+      "description": "sdafasdf",
+      "image": "https://img.freepik.com/free-photo/talking-audience_1098-14094.jpg?w=740&t=st=1693836981~exp=1693837581~hmac=ea286e481fccc3a43af0337c23d1cc5b6c9138866a837be989c7786cc4e3b33a"
     }
   ]
 }

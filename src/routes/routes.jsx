@@ -18,6 +18,9 @@ import VegitablesManage from "../components/DashboardLayout/VegitablesManage";
 import DairyManage from "../components/DashboardLayout/DairyManage";
 import MeatManage from "../components/DashboardLayout/MeatManage";
 import AddFruits from "../components/DashboardLayout/AddProduct/AddFruits";
+import AddDairy from "../components/DashboardLayout/AddProduct/AddDairy";
+import AddVegitables from "../components/DashboardLayout/AddProduct/AddVegitables";
+import AddMeat from "../components/DashboardLayout/AddProduct/AddMeat";
 
 const router = createBrowserRouter([
   {
@@ -113,6 +116,18 @@ const router = createBrowserRouter([
       {
         path: "/dashboard/add-fruits",
         element: <AddFruits></AddFruits>,
+      },
+      {
+        path: "/dashboard/add-dairy",
+        element: <AddDairy></AddDairy>,
+      },
+      {
+        path: "/dashboard/add-vegitables",
+        element: <AddVegitables></AddVegitables>,
+      },
+      {
+        path: "/dashboard/add-meat",
+        element: <AddMeat></AddMeat>,
       },
       {
         path: "/dashboard/user-manage",

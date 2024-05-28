@@ -41,6 +41,15 @@ const Dashboard = () => {
             <Link to="/dashboard/add-fruits">Add-Fruits</Link>
           </li>
           <li>
+            <Link to="/dashboard/add-vegitables">Add-Vegitables</Link>
+          </li>
+          <li>
+            <Link to="/dashboard/add-dairy">Add-Dairy</Link>
+          </li>
+          <li>
+            <Link to="/dashboard/add-meat">Add-Meat</Link>
+          </li>
+          <li>
             <Link to="/dashboard/user-manage">User-Manage</Link>
           </li>
           <hr className="border border-green-300 my-6" />
