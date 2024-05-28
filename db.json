@@ -24,7 +24,7 @@
     {
       "id": "4",
       "name": "Spinach",
-      "price": 2.0,
+      "price": 2,
       "description": "A leafy green vegetable that is high in iron and other nutrients.",
       "image": "https://img.freepik.com/free-photo/juicy-green-sliced-spinach-leaves-lie-wooden-cutting-board-selective-focus-close-up-spinach-idea-making-breakfast-from-organic-healthy-food_166373-1823.jpg?t=st=1716356355~exp=1716359955~hmac=f8b316a2c0f43bc7b69111bf9b79b5b2b508c9705d670ebed464b5261746c6e6&w=740"
     },
@@ -75,7 +75,7 @@
     {
       "id": "1",
       "name": "Apple",
-      "price": 3.0,
+      "price": 3,
       "description": "A crisp, sweet fruit that is great for snacking and baking.",
       "image": "https://img.freepik.com/free-psd/red-fresh-apple-isolated-con-transparent-background_125540-5172.jpg?t=st=1716360329~exp=1716363929~hmac=882644e9eece7f3a7f3964c4151a0a9c30486d46d2efed1454358569192c6a79&w=826"
     },
@@ -96,7 +96,7 @@
     {
       "id": "4",
       "name": "Strawberry",
-      "price": 4.0,
+      "price": 4,
       "description": "A sweet red berry that is delicious in desserts and salads.",
       "image": "https://img.freepik.com/free-photo/fresh-strawberries-wooden-table_1150-8055.jpg?t=st=1716360535~exp=1716364135~hmac=cc84810fb3e7e1d7bda459b52140621870f3817eb27e47d20e861b8017126baa&w=826"
     },
@@ -110,7 +110,7 @@
     {
       "id": "6",
       "name": "Pineapple",
-      "price": 5.0,
+      "price": 5,
       "description": "A tropical fruit with a spiky exterior and sweet, juicy interior.",
       "image": "https://img.freepik.com/free-psd/photo-pineapple-isolated-transparent-background_125540-5142.jpg?t=st=1716653922~exp=1716657522~hmac=02cae70ee0d833b19fd2f876986141acb703d0c9a77d2a938d4bb2fa6b94bcd7&w=826"
     },
@@ -131,7 +131,7 @@
     {
       "id": "9",
       "name": "Watermelon",
-      "price": 7.0,
+      "price": 7,
       "description": "A large, juicy fruit that is perfect for hot summer days.",
       "image": "https://img.freepik.com/free-photo/glass-bowl-with-pieces-watermelon_1268-33630.jpg?t=st=1716360608~exp=1716364208~hmac=4d5a44c57387331734f5a176f8828eadfc80e4a5bbe6365a7f61e514484c124d&w=740"
     },
@@ -141,6 +141,13 @@
       "price": 3.25,
       "description": "A sweet and juicy fruit with a soft, fuzzy skin.",
       "image": "https://img.freepik.com/free-photo/fresh-yellow-apricots-isolated-white_114579-10486.jpg?t=st=1716654015~exp=1716657615~hmac=3f9461b471ed654794e3d192c890d8a1d1baac1af2354b8b69857843479138af&w=826"
+    },
+    {
+      "id": "11",
+      "name": "Water melon",
+      "price": "10",
+      "description": "Green, striped, ripe watermelon with a slice in a cross-section, isolated on white background",
+      "image": "https://img.freepik.com/free-photo/green-striped-ripe-watermelon-with-slice-cross-section-isolated-white-background-with-copy-space-text-images-special-kind-berry-sweet-pink-flesh-with-black-seeds-side-view_639032-1254.jpg?t=st=1716908653~exp=1716912253~hmac=4228b172ad0aa1c846f5c1ea455c48633e75605c29fe8f8c9e4c05249112768c&w=826"
     }
   ],
   "egg": [
@@ -175,7 +182,7 @@
     {
       "id": "5",
       "name": "Bacon",
-      "price": 7.0,
+      "price": 7,
       "description": "A crispy and savory addition to breakfasts and sandwiches.",
       "image": "https://img.freepik.com/free-photo/raw-chicken-with-spices-herbs-wooden-board-blue_114579-16396.jpg?t=st=1716392217~exp=1716395817~hmac=9d6773b902e82266d6358766de2aff31f218943af154fa713092c3c73a40b989&w=826"
     },
@@ -226,7 +233,7 @@
     {
       "id": "2",
       "name": "Cheddar Cheese",
-      "price": 5.0,
+      "price": 5,
       "description": "A popular cheese known for its rich, creamy texture and sharp flavor.",
       "image": "https://img.freepik.com/free-vector/cheese-slices-3d-realistic-vector-illustration_107791-12115.jpg?t=st=1716376262~exp=1716379862~hmac=3b0e4745296caa84f1cbdb2278c1f134b84b01bf2506986f584599e590085da5&w=740"
     },
@@ -282,7 +289,7 @@
     {
       "id": "10",
       "name": "Greek Yogurt",
-      "price": 2.0,
+      "price": 2,
       "description": "A thick, creamy yogurt that is high in protein and often enjoyed with honey or fruit.",
       "image": "https://img.freepik.com/free-photo/bowl-oat-granola-with-yogurt-fresh-mulberry-strawberries-kiwi-mint-nuts-black-rock-board-healthy-breakfast-top-view-copy-space-flat-lay-healthy-breakfast-menu-concept_1150-45821.jpg?t=st=1716654615~exp=1716658215~hmac=0eddb9b23566c79e29fd8093ca509b0948e9fd5db72b010c23692ced43c8206c&w=826"
     }

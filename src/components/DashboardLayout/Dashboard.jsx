@@ -38,6 +38,9 @@ const Dashboard = () => {
           </li>
           <p className="mt-6 font-bold">Add Products</p>
           <li>
+            <Link to="/dashboard/add-fruits">Add-Fruits</Link>
+          </li>
+          <li>
             <Link to="/dashboard/user-manage">User-Manage</Link>
           </li>
           <hr className="border border-green-300 my-6" />

@@ -17,6 +17,7 @@ import FrutiesManage from "../components/DashboardLayout/FrutiesManage";
 import VegitablesManage from "../components/DashboardLayout/VegitablesManage";
 import DairyManage from "../components/DashboardLayout/DairyManage";
 import MeatManage from "../components/DashboardLayout/MeatManage";
+import AddFruits from "../components/DashboardLayout/AddProduct/AddFruits";
 
 const router = createBrowserRouter([
   {
@@ -108,6 +109,10 @@ const router = createBrowserRouter([
       {
         path: "/dashboard/meat-manage",
         element: <MeatManage></MeatManage>,
+      },
+      {
+        path: "/dashboard/add-fruits",
+        element: <AddFruits></AddFruits>,
       },
       {
         path: "/dashboard/user-manage",
