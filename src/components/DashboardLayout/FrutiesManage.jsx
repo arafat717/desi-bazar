@@ -9,11 +9,13 @@ const FrutiesManage = () => {
       .then((res) => res.json())
       .then((data) => setSeaFood(data));
   }, []);
-  console.log(seaFood);
+  const handleDeleteProduct = (id) => {
+    setSeaFood(seaFood.filter((sea) => sea.id !== id));
+  };
   return (
     <div className="w-full">
       <h1 className="font-bold text-center text-2xl mb-5">Fruits</h1>
-      <Table data={seaFood}></Table>
+      <Table data={seaFood} handleDeleteProduct={handleDeleteProduct}></Table>
     </div>
   );
 };

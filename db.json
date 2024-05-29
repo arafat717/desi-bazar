@@ -141,13 +141,6 @@
       "price": 3.25,
       "description": "A sweet and juicy fruit with a soft, fuzzy skin.",
       "image": "https://img.freepik.com/free-photo/fresh-yellow-apricots-isolated-white_114579-10486.jpg?t=st=1716654015~exp=1716657615~hmac=3f9461b471ed654794e3d192c890d8a1d1baac1af2354b8b69857843479138af&w=826"
-    },
-    {
-      "id": "11",
-      "name": "Water melon",
-      "price": "10",
-      "description": "Green, striped, ripe watermelon with a slice in a cross-section, isolated on white background",
-      "image": "https://img.freepik.com/free-photo/green-striped-ripe-watermelon-with-slice-cross-section-isolated-white-background-with-copy-space-text-images-special-kind-berry-sweet-pink-flesh-with-black-seeds-side-view_639032-1254.jpg?t=st=1716908653~exp=1716912253~hmac=4228b172ad0aa1c846f5c1ea455c48633e75605c29fe8f8c9e4c05249112768c&w=826"
     }
   ],
   "egg": [
