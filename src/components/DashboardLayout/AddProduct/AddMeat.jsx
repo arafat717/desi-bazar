@@ -21,6 +21,7 @@ const AddMeat = () => {
       .then((data) => {
         console.log(data);
         reset();
+        alert("Add Successful");
       });
   };
   return (
