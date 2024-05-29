@@ -16,8 +16,8 @@
     },
     {
       "id": "3",
-      "name": "Broccoli",
-      "price": 1.75,
+      "name": "Broccoli ",
+      "price": "1.75",
       "description": "A green vegetable that is rich in vitamins and minerals.",
       "image": "https://img.freepik.com/free-photo/fresh-broccoli-wooden-box_176474-426.jpg?t=st=1716356309~exp=1716359909~hmac=63d5266cb87df12f29e2b1959ac522a070bf8e0947f98a2e1209efd0f1cea3e4&w=826"
     },
