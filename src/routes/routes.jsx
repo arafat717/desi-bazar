@@ -23,6 +23,8 @@ import AddVegitables from "../components/DashboardLayout/AddProduct/AddVegitable
 import AddMeat from "../components/DashboardLayout/AddProduct/AddMeat";
 import DairyEdit from "../components/DashboardLayout/EditProduct/DairyEdit";
 import VegitablesEdit from "../components/DashboardLayout/EditProduct/VegitablesEdit";
+import EditMeat from "../components/DashboardLayout/EditProduct/EditMeat";
+import FruitsEdit from "../components/DashboardLayout/EditProduct/FruitsEdit";
 
 const router = createBrowserRouter([
   {
@@ -108,6 +110,12 @@ const router = createBrowserRouter([
         element: <FrutiesManage></FrutiesManage>,
       },
       {
+        path: "/dashboard/fruits-edit/:id",
+        element: <FruitsEdit></FruitsEdit>,
+        loader: ({ params }) =>
+          fetch(`http://localhost:3000/fruits/${params.id}`),
+      },
+      {
         path: "/dashboard/vegitables-manage",
         element: <VegitablesManage></VegitablesManage>,
       },
@@ -132,8 +140,8 @@ const router = createBrowserRouter([
         element: <MeatManage></MeatManage>,
       },
       {
-        path: "/dashboard/meat-edit",
-        element: <MeatManage></MeatManage>,
+        path: "/dashboard/meat-edit/:id",
+        element: <EditMeat></EditMeat>,
         loader: ({ params }) => fetch(`http://localhost:3000/egg/${params.id}`),
       },
       {

@@ -75,7 +75,7 @@
     {
       "id": "1",
       "name": "Apple",
-      "price": 3,
+      "price": "3",
       "description": "A crisp, sweet fruit that is great for snacking and baking.",
       "image": "https://img.freepik.com/free-psd/red-fresh-apple-isolated-con-transparent-background_125540-5172.jpg?t=st=1716360329~exp=1716363929~hmac=882644e9eece7f3a7f3964c4151a0a9c30486d46d2efed1454358569192c6a79&w=826"
     },
@@ -147,7 +147,7 @@
     {
       "id": "1",
       "name": "Chicken",
-      "price": 5.99,
+      "price": "5.99",
       "description": "A lean cut of chicken that is high in protein and versatile for cooking.",
       "image": "https://img.freepik.com/free-photo/raw-chicken-with-spices-herbs-wooden-board-blue_114579-16396.jpg?t=st=1716392217~exp=1716395817~hmac=9d6773b902e82266d6358766de2aff31f218943af154fa713092c3c73a40b989&w=826"
     },

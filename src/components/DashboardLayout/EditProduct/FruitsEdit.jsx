@@ -1,7 +1,7 @@
 import { useForm } from "react-hook-form";
 import { useLoaderData, useNavigate } from "react-router-dom";
 
-const EditMeat = () => {
+const FruitsEdit = () => {
   const vegitable = useLoaderData();
   const navigate = useNavigate();
   const {
@@ -13,7 +13,7 @@ const EditMeat = () => {
 
   const onSubmit = async (data) => {
     console.log(data);
-    await fetch(`http://localhost:3000/egg/${vegitable.id}`, {
+    await fetch(`http://localhost:3000/fruits/${vegitable.id}`, {
       method: "PATCH",
       headers: {
         "Content-type": "application/json",
@@ -24,7 +24,7 @@ const EditMeat = () => {
       .then(() => {
         reset();
         alert("Edit Successful");
-        navigate("/dashboard/meat-manage");
+        navigate("/dashboard/fruits-manage");
       });
   };
   return (
@@ -33,7 +33,7 @@ const EditMeat = () => {
         onSubmit={handleSubmit(onSubmit)}
         className="bg-white p-6 rounded shadow-md w-full max-w-lg"
       >
-        <h2 className="text-2xl mb-4">Edit Meat</h2>
+        <h2 className="text-2xl mb-4">Edit Fruits</h2>
 
         <div className="mb-4">
           <label
@@ -143,4 +143,4 @@ const EditMeat = () => {
   );
 };
 
-export default EditMeat;
+export default FruitsEdit;

@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import { AiFillDelete } from "react-icons/ai";
 import { MdSystemUpdateAlt } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 const MeatTable = ({ data, handleDeleteProduct }) => {
   console.log(data);
@@ -48,7 +49,9 @@ const MeatTable = ({ data, handleDeleteProduct }) => {
                   />
                 </td>
                 <td className="py-3 px-6">
-                  <MdSystemUpdateAlt className="text-white bg-blue-600 p-1 rounded-lg cursor-pointer text-4xl hover:bg-black duration-300" />
+                  <Link to={`/dashboard/meat-edit/${item.id}`}>
+                    <MdSystemUpdateAlt className="text-white bg-blue-600 p-1 rounded-lg cursor-pointer text-4xl hover:bg-black duration-300" />
+                  </Link>
                 </td>
               </tr>
             ))}
