@@ -219,7 +219,7 @@
     {
       "id": "1",
       "name": "Milk",
-      "price": 2.5,
+      "price": "2.5",
       "description": "A staple dairy product that is rich in calcium and vitamin D.",
       "image": "https://img.freepik.com/premium-photo/glass-milk-chocolate-wood-table-background-illustration-images-3d-render-ai-generated_796580-197.jpg?w=740"
     },

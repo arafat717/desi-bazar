@@ -21,6 +21,7 @@ import AddFruits from "../components/DashboardLayout/AddProduct/AddFruits";
 import AddDairy from "../components/DashboardLayout/AddProduct/AddDairy";
 import AddVegitables from "../components/DashboardLayout/AddProduct/AddVegitables";
 import AddMeat from "../components/DashboardLayout/AddProduct/AddMeat";
+import DairyEdit from "../components/DashboardLayout/EditProduct/DairyEdit";
 
 const router = createBrowserRouter([
   {
@@ -98,6 +99,10 @@ const router = createBrowserRouter([
     ),
     children: [
       {
+        path: "/dashboard",
+        element: <FrutiesManage></FrutiesManage>,
+      },
+      {
         path: "/dashboard/fruits-manage",
         element: <FrutiesManage></FrutiesManage>,
       },
@@ -108,6 +113,12 @@ const router = createBrowserRouter([
       {
         path: "/dashboard/dairy-manage",
         element: <DairyManage></DairyManage>,
+      },
+      {
+        path: "/dashboard/dairy-edit/:id",
+        element: <DairyEdit></DairyEdit>,
+        loader: ({ params }) =>
+          fetch(`http://localhost:3000/dairy/${params.id}`),
       },
       {
         path: "/dashboard/meat-manage",
