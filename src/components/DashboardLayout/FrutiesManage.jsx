@@ -10,7 +10,7 @@ const FrutiesManage = () => {
       .then((data) => setSeaFood(data));
   }, []);
   const handleDeleteProduct = (id) => {
-    setSeaFood(seaFood.filter((sea) => sea.id !== id));
+    setSeaFood(seaFood.filter((sea) => sea._id !== id));
   };
   return (
     <div className="w-full">

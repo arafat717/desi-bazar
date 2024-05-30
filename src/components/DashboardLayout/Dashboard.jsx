@@ -39,7 +39,7 @@ const Dashboard = () => {
           <p className="mt-6 font-bold">Add Products</p>
 
           <li>
-            <Link to="/dashboard/add-dairy">Add-Dairy</Link>
+            <Link to="/dashboard/add-dairy">Add-Product</Link>
           </li>
           <p className="mt-6 font-bold">User Management </p>
           <li>
