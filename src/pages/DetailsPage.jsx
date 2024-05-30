@@ -2,7 +2,6 @@ import { useLoaderData } from "react-router-dom";
 
 const DetailsPage = () => {
   const data = useLoaderData();
-  console.log(data);
   return (
     <div className="md:flex bg-base-100 shadow-xl mt-2 h-full">
       <div>

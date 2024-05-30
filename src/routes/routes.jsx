@@ -60,28 +60,29 @@ const router = createBrowserRouter([
         element: <Contact></Contact>,
       },
       {
-        path: "fruits/:id",
+        path: "product/:id",
         element: <DetailsPage></DetailsPage>,
         loader: ({ params }) =>
-          fetch(`http://localhost:3000/fruits/${params.id}`),
+          fetch(`http://localhost:5000/product/${params.id}`),
       },
       {
-        path: "vegitables/:id",
+        path: "product/:id",
         element: <DetailsPage></DetailsPage>,
         loader: ({ params }) =>
-          fetch(`http://localhost:3000/vegitables/${params.id}`),
+          fetch(`http://localhost:5000/product/${params.id}`),
       },
 
       {
-        path: "dairy/:id",
+        path: "product/:id",
         element: <DetailsPage></DetailsPage>,
         loader: ({ params }) =>
-          fetch(`http://localhost:3000/dairy/${params.id}`),
+          fetch(`http://localhost:5000/product/${params.id}`),
       },
       {
-        path: "egg/:id",
+        path: "product/:id",
         element: <DetailsPage></DetailsPage>,
-        loader: ({ params }) => fetch(`http://localhost:3000/egg/${params.id}`),
+        loader: ({ params }) =>
+          fetch(`http://localhost:5000/product/${params.id}`),
       },
       {
         path: "/login",

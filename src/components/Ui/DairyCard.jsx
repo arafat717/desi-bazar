@@ -16,7 +16,7 @@ const DairyCard = ({ food }) => {
         <p>{food.description}</p>
         <div className="flex justify-end gap-2">
           <div className="badge badge-outline cursor-pointer">
-            <Link to={`/dairy/${food.id}`}>Details</Link>
+            <Link to={`/product/${food._id}`}>Details</Link>
           </div>
           <div className="badge badge-outline cursor-pointer">Purchase</div>
         </div>

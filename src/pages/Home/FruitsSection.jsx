@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import FruitsCard from "../../components/Ui/FruitsCard";
+import Card from "../../components/Ui/Card";
 
 /* eslint-disable react/no-unescaped-entities */
 const FruitsSection = () => {
   const [seaFood, setSeaFood] = useState();
 
   useEffect(() => {
-    fetch("http://localhost:3000/fruits")
+    fetch("http://localhost:5000/fruits")
       .then((res) => res.json())
       .then((data) => setSeaFood(data));
   }, []);
@@ -32,7 +32,7 @@ const FruitsSection = () => {
         {seaFood &&
           seaFood
             .slice(0, 5)
-            .map((food) => <FruitsCard key={food.id} food={food}></FruitsCard>)}
+            .map((food) => <Card key={food.id} food={food}></Card>)}
       </div>
     </div>
   );
