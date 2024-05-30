@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
-import MeatTable from "../Ui/MeatTable";
+import Table from "../Ui/Table";
 
 const MeatManage = () => {
   const [seaFood, setSeaFood] = useState();
 
   useEffect(() => {
-    fetch("http://localhost:3000/egg")
+    fetch("http://localhost:5000/meat")
       .then((res) => res.json())
       .then((data) => setSeaFood(data));
   }, []);
@@ -17,10 +17,7 @@ const MeatManage = () => {
   return (
     <div className="w-full">
       <h1 className="font-bold text-center text-2xl mb-5">Meat</h1>
-      <MeatTable
-        data={seaFood}
-        handleDeleteProduct={handleDeleteProduct}
-      ></MeatTable>
+      <Table data={seaFood} handleDeleteProduct={handleDeleteProduct}></Table>
     </div>
   );
 };

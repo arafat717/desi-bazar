@@ -5,7 +5,7 @@ const FrutiesManage = () => {
   const [seaFood, setSeaFood] = useState();
 
   useEffect(() => {
-    fetch("http://localhost:3000/fruits")
+    fetch("http://localhost:5000/fruits")
       .then((res) => res.json())
       .then((data) => setSeaFood(data));
   }, []);
