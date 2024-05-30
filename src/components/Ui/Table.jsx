@@ -4,7 +4,7 @@ import { MdSystemUpdateAlt } from "react-icons/md";
 import { Link } from "react-router-dom";
 const Table = ({ data, handleDeleteProduct }) => {
   const handleDelete = async (id) => {
-    await fetch(`http://localhost:3000/fruits/${id}`, {
+    await fetch(`http://localhost:5000/product/${id}`, {
       method: "DELETE",
     })
       .then((res) => res.json())
@@ -40,12 +40,12 @@ const Table = ({ data, handleDeleteProduct }) => {
                 <td className="py-3 px-6">$ {item.price}</td>
                 <td className="py-3 px-6">
                   <AiFillDelete
-                    onClick={() => handleDelete(item.id)}
+                    onClick={() => handleDelete(item._id)}
                     className="text-white bg-red-600 p-1 rounded-lg cursor-pointer text-4xl hover:bg-black duration-300"
                   />
                 </td>
                 <td className="py-3 px-6">
-                  <Link to={`/dashboard/fruits-edit/${item.id}`}>
+                  <Link to={`/dashboard/product-edit/${item._id}`}>
                     <MdSystemUpdateAlt className="text-white bg-blue-600 p-1 rounded-lg cursor-pointer text-4xl hover:bg-black duration-300" />
                   </Link>
                 </td>

@@ -17,14 +17,8 @@ import FrutiesManage from "../components/DashboardLayout/FrutiesManage";
 import VegitablesManage from "../components/DashboardLayout/VegitablesManage";
 import DairyManage from "../components/DashboardLayout/DairyManage";
 import MeatManage from "../components/DashboardLayout/MeatManage";
-import AddFruits from "../components/DashboardLayout/AddProduct/AddFruits";
 import AddDairy from "../components/DashboardLayout/AddProduct/AddDairy";
-import AddVegitables from "../components/DashboardLayout/AddProduct/AddVegitables";
-import AddMeat from "../components/DashboardLayout/AddProduct/AddMeat";
 import DairyEdit from "../components/DashboardLayout/EditProduct/DairyEdit";
-import VegitablesEdit from "../components/DashboardLayout/EditProduct/VegitablesEdit";
-import EditMeat from "../components/DashboardLayout/EditProduct/EditMeat";
-import FruitsEdit from "../components/DashboardLayout/EditProduct/FruitsEdit";
 
 const router = createBrowserRouter([
   {
@@ -111,55 +105,44 @@ const router = createBrowserRouter([
         element: <FrutiesManage></FrutiesManage>,
       },
       {
-        path: "/dashboard/fruits-edit/:id",
-        element: <FruitsEdit></FruitsEdit>,
+        path: "/dashboard/product-edit/:id",
+        element: <DairyEdit></DairyEdit>,
         loader: ({ params }) =>
-          fetch(`http://localhost:3000/fruits/${params.id}`),
+          fetch(`http://localhost:5000/product/${params.id}`),
       },
       {
         path: "/dashboard/vegitables-manage",
         element: <VegitablesManage></VegitablesManage>,
       },
       {
-        path: "/dashboard/vegitables-edit/:id",
-        element: <VegitablesEdit></VegitablesEdit>,
+        path: "/dashboard/product-edit/:id",
+        element: <DairyEdit></DairyEdit>,
         loader: ({ params }) =>
-          fetch(`http://localhost:3000/vegitables/${params.id}`),
+          fetch(`http://localhost:5000/product/${params.id}`),
       },
       {
         path: "/dashboard/dairy-manage",
         element: <DairyManage></DairyManage>,
       },
       {
-        path: "/dashboard/dairy-edit/:id",
+        path: "/dashboard/product-edit/:id",
         element: <DairyEdit></DairyEdit>,
         loader: ({ params }) =>
-          fetch(`http://localhost:3000/dairy/${params.id}`),
+          fetch(`http://localhost:5000/product/${params.id}`),
       },
       {
         path: "/dashboard/meat-manage",
         element: <MeatManage></MeatManage>,
       },
       {
-        path: "/dashboard/meat-edit/:id",
-        element: <EditMeat></EditMeat>,
-        loader: ({ params }) => fetch(`http://localhost:3000/egg/${params.id}`),
-      },
-      {
-        path: "/dashboard/add-fruits",
-        element: <AddFruits></AddFruits>,
+        path: "/dashboard/product-edit/:id",
+        element: <DairyEdit></DairyEdit>,
+        loader: ({ params }) =>
+          fetch(`http://localhost:3000/product/${params.id}`),
       },
       {
         path: "/dashboard/add-dairy",
         element: <AddDairy></AddDairy>,
-      },
-      {
-        path: "/dashboard/add-vegitables",
-        element: <AddVegitables></AddVegitables>,
-      },
-      {
-        path: "/dashboard/add-meat",
-        element: <AddMeat></AddMeat>,
       },
       {
         path: "/dashboard/user-manage",

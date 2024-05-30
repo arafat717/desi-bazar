@@ -37,18 +37,11 @@ const Dashboard = () => {
             <Link to="/dashboard/meat-manage">Meat-Manage</Link>
           </li>
           <p className="mt-6 font-bold">Add Products</p>
-          <li>
-            <Link to="/dashboard/add-fruits">Add-Fruits</Link>
-          </li>
-          <li>
-            <Link to="/dashboard/add-vegitables">Add-Vegitables</Link>
-          </li>
+
           <li>
             <Link to="/dashboard/add-dairy">Add-Dairy</Link>
           </li>
-          <li>
-            <Link to="/dashboard/add-meat">Add-Meat</Link>
-          </li>
+          <p className="mt-6 font-bold">User Management </p>
           <li>
             <Link to="/dashboard/user-manage">User-Manage</Link>
           </li>

@@ -12,6 +12,7 @@ const VegitablesManage = () => {
   const handleDeleteProduct = (id) => {
     setSeaFood(seaFood.filter((sea) => sea.id !== id));
   };
+
   return (
     <div className="w-full">
       <h1 className="font-bold text-center text-2xl mb-5">Vegitables</h1>
