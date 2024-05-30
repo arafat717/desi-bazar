@@ -1,4 +1,5 @@
 import { useForm } from "react-hook-form";
+import toast from "react-hot-toast";
 import { useLoaderData, useNavigate } from "react-router-dom";
 
 const VegitablesEdit = () => {
@@ -23,7 +24,7 @@ const VegitablesEdit = () => {
       .then((res) => res.json())
       .then(() => {
         reset();
-        alert("Edit Successful");
+        toast.success("Edit Successful");
         navigate("/dashboard/vegitables-manage");
       });
   };

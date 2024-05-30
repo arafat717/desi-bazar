@@ -1,4 +1,5 @@
 import { useForm } from "react-hook-form";
+import toast from "react-hot-toast";
 
 const AddDairy = () => {
   const {
@@ -18,8 +19,8 @@ const AddDairy = () => {
       body: JSON.stringify(data),
     })
       .then((res) => res.json())
-      .then((data) => {
-        console.log(data);
+      .then(() => {
+        toast.success("Product added successfuly");
         reset();
       });
   };

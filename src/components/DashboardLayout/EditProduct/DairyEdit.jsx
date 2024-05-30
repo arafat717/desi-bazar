@@ -1,4 +1,5 @@
 import { useForm } from "react-hook-form";
+import toast from "react-hot-toast";
 import { useLoaderData, useNavigate } from "react-router-dom";
 
 const DairyEdit = () => {
@@ -23,7 +24,7 @@ const DairyEdit = () => {
       .then((res) => res.json())
       .then(() => {
         reset();
-        alert("Update Successful");
+        toast.success("Update Successful");
       });
     navigate("/dashboard/fruits-manage");
   };

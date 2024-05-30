@@ -1,4 +1,5 @@
 /* eslint-disable react/prop-types */
+import toast from "react-hot-toast";
 import { AiFillDelete } from "react-icons/ai";
 import { MdSystemUpdateAlt } from "react-icons/md";
 import { Link } from "react-router-dom";
@@ -11,7 +12,7 @@ const Table = ({ data, handleDeleteProduct }) => {
       .then((data) => {
         console.log(data);
         handleDeleteProduct(id);
-        alert("Delete successful");
+        toast.success("Delete Successful!");
       });
   };
   return (
