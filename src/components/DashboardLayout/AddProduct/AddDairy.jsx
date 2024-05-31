@@ -1,7 +1,9 @@
 import { useForm } from "react-hook-form";
 import toast from "react-hot-toast";
+import { useNavigate } from "react-router-dom";
 
 const AddDairy = () => {
+  const navigate = useNavigate();
   const {
     register,
     handleSubmit,
@@ -22,6 +24,18 @@ const AddDairy = () => {
       .then(() => {
         toast.success("Product added successfuly");
         reset();
+        if (data.catagory == "fruits") {
+          navigate("/dashboard/fruits-manage");
+        }
+        if (data.catagory == "vegitables") {
+          navigate("/dashboard/vegitables-manage");
+        }
+        if (data.catagory == "dairy") {
+          navigate("/dashboard/dairy-manage");
+        }
+        if (data.catagory == "meat") {
+          navigate("/dashboard/meat-manage");
+        }
       });
   };
   return (
