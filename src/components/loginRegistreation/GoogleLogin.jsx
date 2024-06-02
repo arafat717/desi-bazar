@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 // GoogleLogin.jsx
 import { FcGoogle } from "react-icons/fc";
 import useAuth from "../../hooks/useAuth";
@@ -8,7 +9,6 @@ const GoogleLogin = () => {
   const handleGoogleSignIn = async () => {
     try {
       const data = await googleLogin();
-      console.log(data);
 
       if (data?.user?.email) {
         const userInfo = {
@@ -25,7 +25,6 @@ const GoogleLogin = () => {
         });
 
         const responseData = await response.json();
-        console.log(responseData);
       }
     } catch (error) {
       console.error("Google sign-in error: ", error);

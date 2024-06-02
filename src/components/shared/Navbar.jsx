@@ -3,6 +3,7 @@ import useAuth from "../../hooks/useAuth";
 
 const Navbar = () => {
   const { user, logout } = useAuth();
+  console.log(user?.photoURL);
   const handleLogout = async () => {
     await logout();
   };
@@ -113,7 +114,7 @@ const Navbar = () => {
               user?.photoURL ||
               "https://img.freepik.com/premium-vector/person-icon-vector-design-template-user-sign-person-symbol-human-avatar-flat-style_23648-1744.jpg?w=740"
             }
-            alt=""
+            alt="user image"
             className={`w-10 rounded-full mr-4`}
           />
         )}
