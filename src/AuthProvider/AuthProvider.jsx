@@ -20,8 +20,9 @@ const AuthProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
   const GoogleProvider = new GoogleAuthProvider();
 
-  const googleLogin = () => {
-    signInWithPopup(auth, GoogleProvider);
+  const googleLogin = async () => {
+    const userCredential = await signInWithPopup(auth, GoogleProvider);
+    return userCredential;
   };
 
   const createUser = (email, password) => {

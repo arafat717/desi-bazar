@@ -148,7 +148,7 @@ const AddDairy = () => {
             type="submit"
             className="w-full px-4 py-2 bg-blue-500 text-white rounded-md shadow-sm hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
           >
-            Submit
+            Add Product
           </button>
         </div>
       </form>
