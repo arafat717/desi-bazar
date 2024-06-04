@@ -19,6 +19,7 @@ import DairyManage from "../components/DashboardLayout/DairyManage";
 import MeatManage from "../components/DashboardLayout/MeatManage";
 import AddDairy from "../components/DashboardLayout/AddProduct/AddDairy";
 import DairyEdit from "../components/DashboardLayout/EditProduct/DairyEdit";
+import EditProfile from "../components/DashboardLayout/EditProduct/EditProfile";
 
 const router = createBrowserRouter([
   {
@@ -119,6 +120,10 @@ const router = createBrowserRouter([
         element: <DairyEdit></DairyEdit>,
         loader: ({ params }) =>
           fetch(`http://localhost:5000/product/${params.id}`),
+      },
+      {
+        path: "/dashboard/user-edit/:id",
+        element: <EditProfile></EditProfile>,
       },
       {
         path: "/dashboard/dairy-manage",
