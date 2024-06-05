@@ -1,6 +1,9 @@
 import { useForm } from "react-hook-form";
+import { useLoaderData } from "react-router-dom";
 
 const EditProfile = () => {
+  const data = useLoaderData();
+  console.log(data);
   const {
     register,
     handleSubmit,
@@ -44,6 +47,7 @@ const EditProfile = () => {
             id="name"
             type="text"
             {...register("name", { required: true })}
+            defaultValue={data?.name}
             className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
           />
           {errors.name && (
@@ -62,6 +66,7 @@ const EditProfile = () => {
             id="email"
             type="text"
             {...register("email", { required: true })}
+            defaultValue={data?.email}
             className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
           />
           {errors.email && (

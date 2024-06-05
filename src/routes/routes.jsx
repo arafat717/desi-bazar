@@ -124,6 +124,8 @@ const router = createBrowserRouter([
       {
         path: "/dashboard/user-edit/:id",
         element: <EditProfile></EditProfile>,
+        loader: ({ params }) =>
+          fetch(`http://localhost:5000/user/get/${params.id}`),
       },
       {
         path: "/dashboard/dairy-manage",
