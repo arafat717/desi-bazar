@@ -24,6 +24,12 @@ const UserManagement = () => {
           <p>
             <span className="font-semibold">Email:</span> {useUser?.email}
           </p>
+          <p>
+            <span className="font-semibold">Age:</span> {useUser?.age}
+          </p>
+          <p>
+            <span className="font-semibold">Phone:</span> {useUser?.phone}
+          </p>
         </div>
         <Link to={`/dashboard/user-edit/${useUser?._id}`}>
           <button className="btn btn-secondary">Edit Profile</button>

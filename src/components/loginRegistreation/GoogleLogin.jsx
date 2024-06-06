@@ -9,11 +9,11 @@ const GoogleLogin = () => {
   const handleGoogleSignIn = async () => {
     try {
       const data = await googleLogin();
-
       if (data?.user?.email) {
         const userInfo = {
           email: data.user.email,
           name: data.user.displayName,
+          profile: data.user.photoURL,
         };
 
         const response = await fetch("http://localhost:5000/user", {
@@ -25,6 +25,7 @@ const GoogleLogin = () => {
         });
 
         const responseData = await response.json();
+        console.log(responseData);
       }
     } catch (error) {
       console.error("Google sign-in error: ", error);
