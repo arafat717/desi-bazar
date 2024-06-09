@@ -25,6 +25,7 @@ const GoogleLogin = () => {
         });
 
         const responseData = await response.json();
+        localStorage.setItem("token", responseData?.token);
         console.log(responseData);
       }
     } catch (error) {
