@@ -31,7 +31,7 @@ const Table = ({ data, handleDeleteProduct }) => {
           <tbody className="text-gray-600 text-sm font-light">
             {data?.map((item) => (
               <tr
-                key={item.id}
+                key={item._id}
                 className="border-b border-gray-200 hover:bg-gray-100"
               >
                 <td className="py-3 px-6">

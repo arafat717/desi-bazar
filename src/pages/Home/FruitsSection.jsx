@@ -32,7 +32,7 @@ const FruitsSection = () => {
         {seaFood &&
           seaFood
             .slice(0, 5)
-            .map((food) => <Card key={food.id} food={food}></Card>)}
+            .map((food) => <Card key={food._id} food={food}></Card>)}
       </div>
     </div>
   );

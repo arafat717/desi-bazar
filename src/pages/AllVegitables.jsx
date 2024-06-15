@@ -18,7 +18,7 @@ const AllVegitables = () => {
       <hr className="w-[300px] ml-10 border border-green-300 mt-2" />
       <div className="grid md:grid-cols-3 sm:grid-cols-2 lg:grid-cols-5 mx-auto gap-2 px-10 mt-16 mb-20">
         {seaFood &&
-          seaFood.map((food) => <Card key={food.id} food={food}></Card>)}
+          seaFood.map((food) => <Card key={food._id} food={food}></Card>)}
       </div>
     </div>
   );

@@ -4,6 +4,7 @@ import { FcGoogle } from "react-icons/fc";
 import useAuth from "../../hooks/useAuth";
 
 const GoogleLogin = () => {
+  const token = localStorage.getItem("token");
   const { googleLogin } = useAuth();
 
   const handleGoogleSignIn = async () => {
@@ -20,6 +21,7 @@ const GoogleLogin = () => {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
+            authorization: `Bearer ${token}`,
           },
           body: JSON.stringify(userInfo),
         });

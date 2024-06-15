@@ -3,6 +3,8 @@ import toast from "react-hot-toast";
 import { useLoaderData, useNavigate } from "react-router-dom";
 
 const DairyEdit = () => {
+  const token = localStorage.getItem("token");
+  console.log(token);
   const dairy = useLoaderData();
   const navigate = useNavigate();
 
@@ -18,6 +20,7 @@ const DairyEdit = () => {
       method: "PATCH",
       headers: {
         "Content-type": "application/json",
+        authorization: `Bearer ${token}`,
       },
       body: JSON.stringify(data),
     })
