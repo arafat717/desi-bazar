@@ -8,7 +8,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="navbar fixed z-10 top-0 bg-black opacity-50 w-[1400px] text-white px-5">
+    <div className="navbar fixed z-10 top-0 bg-black opacity-60 max-w-[1400px] mx-auto text-white font-bold px-5">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -29,7 +29,7 @@ const Navbar = () => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-white font-bold"
           >
             <li>
               <Link to="/">Home</Link>
@@ -67,7 +67,7 @@ const Navbar = () => {
         </a>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
+        <ul className="menu menu-horizontal px-1 text-white font-bold">
           <li>
             <Link to="/">Home</Link>
           </li>

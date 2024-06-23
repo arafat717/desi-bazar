@@ -3,7 +3,7 @@ import { useLoaderData } from "react-router-dom";
 const DetailsPage = () => {
   const data = useLoaderData();
   return (
-    <div className="md:flex bg-base-100 shadow-xl mt-2 h-full">
+    <div className="md:flex bg-base-100 shadow-xl h-full mt-32">
       <div>
         <img src={data?.image} alt="Shoes" className="w-96 h-96" />
       </div>
