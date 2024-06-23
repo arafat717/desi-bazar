@@ -8,7 +8,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="navbar fixed z-10 top-0 bg-black opacity-60 max-w-[1400px] mx-auto text-white font-bold px-5">
+    <div className="navbar fixed z-10 top-0 bg-black opacity-40 max-w-[1400px] mx-auto text-white font-bold px-5">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -55,6 +55,9 @@ const Navbar = () => {
               <Link to="/about">About</Link>
             </li>
             <li>
+              <Link to="/shop">Shop</Link>
+            </li>
+            <li>
               <Link to="/contact">Contact</Link>
             </li>
             <li>
@@ -95,6 +98,9 @@ const Navbar = () => {
                 </div>
               </ul>
             </details>
+          </li>
+          <li>
+            <Link to="/shop">Shop</Link>
           </li>
           <li>
             <Link to="/about">About</Link>

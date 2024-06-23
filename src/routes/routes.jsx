@@ -20,6 +20,7 @@ import MeatManage from "../components/DashboardLayout/MeatManage";
 import AddDairy from "../components/DashboardLayout/AddProduct/AddDairy";
 import DairyEdit from "../components/DashboardLayout/EditProduct/DairyEdit";
 import EditProfile from "../components/DashboardLayout/EditProduct/EditProfile";
+import Shop from "../pages/Shop";
 
 const router = createBrowserRouter([
   {
@@ -53,6 +54,10 @@ const router = createBrowserRouter([
       {
         path: "/contact",
         element: <Contact></Contact>,
+      },
+      {
+        path: "/shop",
+        element: <Shop></Shop>,
       },
       {
         path: "product/:id",
