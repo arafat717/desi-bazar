@@ -34,7 +34,7 @@ const Navbar = () => {
             <li>
               <Link to="/">Home</Link>
             </li>
-            <li>
+            {/* <li>
               <a>Catagory</a>
               <ul className="p-2 text-white bg-black">
                 <li>
@@ -50,7 +50,7 @@ const Navbar = () => {
                   <Link to="/Meat">Meat and Fish</Link>
                 </li>
               </ul>
-            </li>
+            </li> */}
             <li>
               <Link to="/about">About</Link>
             </li>
@@ -74,7 +74,7 @@ const Navbar = () => {
           <li>
             <Link to="/">Home</Link>
           </li>
-          <li>
+          {/* <li>
             <details>
               <summary>Catagory</summary>
               <ul className="w-[300px]  text-white bg-black">
@@ -98,7 +98,7 @@ const Navbar = () => {
                 </div>
               </ul>
             </details>
-          </li>
+          </li> */}
           <li>
             <Link to="/shop">Shop</Link>
           </li>

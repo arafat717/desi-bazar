@@ -5,6 +5,7 @@ import Card from "../../components/Ui/Card";
 /* eslint-disable react/no-unescaped-entities */
 const AllProduct = () => {
   const [seaFood, setSeaFood] = useState();
+  console.log(seaFood);
 
   useEffect(() => {
     fetch("http://localhost:5000/vegitables")
@@ -21,9 +22,9 @@ const AllProduct = () => {
           <hr className="w-[200px] ml-10 border border-green-300 mt-2" />
         </div>
         <div className="mt-5 ml-9">
-          <Link to="/vegitables" className="pr-20 md:visible">
+          <Link to="vegitables" className="pr-20 md:visible">
             <button className="btn btn-outline btn-success">
-              Show All Vegitables
+              See All Vegitables
             </button>
           </Link>
         </div>
