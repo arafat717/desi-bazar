@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Card from "../components/Ui/Card";
+import { Helmet } from "react-helmet-async";
 
 /* eslint-disable react/no-unescaped-entities */
 const AllMeatandSeaFood = () => {
@@ -12,6 +13,9 @@ const AllMeatandSeaFood = () => {
   }, []);
   return (
     <div className="my-20">
+      <Helmet>
+        <title>Online Bazar - Fish</title>
+      </Helmet>
       <h1 className="px-10 text-2xl font-bold">
         Best <span className="text-green-500">Meat and Seafood</span> from us
       </h1>

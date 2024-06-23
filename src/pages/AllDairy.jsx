@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Card from "../components/Ui/Card";
+import { Helmet } from "react-helmet-async";
 
 const AllDairy = () => {
   const [seaFood, setSeaFood] = useState();
@@ -13,6 +14,9 @@ const AllDairy = () => {
   }, []);
   return (
     <div className="my-20">
+      <Helmet>
+        <title>Online Bazar - Dairy</title>
+      </Helmet>
       <div>
         <h1 className="px-10 text-2xl font-bold">
           Best <span className="text-green-500">Dairy</span> from us

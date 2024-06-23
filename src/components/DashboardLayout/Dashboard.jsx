@@ -1,8 +1,12 @@
+import { Helmet } from "react-helmet-async";
 import { Link, Outlet } from "react-router-dom";
 
 const Dashboard = () => {
   return (
     <div className="drawer lg:drawer-open">
+      <Helmet>
+        <title>Online Bazar - Dashboard</title>
+      </Helmet>
       <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content flex flex-col items-center p-10">
         <Outlet></Outlet>

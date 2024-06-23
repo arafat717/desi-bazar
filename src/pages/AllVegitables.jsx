@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Card from "../components/Ui/Card";
+import { Helmet } from "react-helmet-async";
 
 /* eslint-disable react/no-unescaped-entities */
 const AllVegitables = () => {
@@ -12,6 +13,9 @@ const AllVegitables = () => {
   }, []);
   return (
     <div className="my-5">
+      <Helmet>
+        <title>Online Bazar - Vegitables</title>
+      </Helmet>
       <h1 className="px-10 mt-20 text-2xl font-bold">
         Best <span className="text-green-500">Vegitables</span> from us
       </h1>
