@@ -1,24 +1,30 @@
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+
+import img1 from "../../../public/img1.jpg";
+import img2 from "../../../public/img2.jpg";
+import img3 from "../../../public/img3.jpg";
+import img4 from "../../../public/img4.jpg";
+import img6 from "../../../public/img6.jpg";
 const Banner = () => {
   return (
-    <div
-      className="hero md:h-[700px] h-[250px]"
-      style={{
-        backgroundImage:
-          "url(https://img.freepik.com/premium-photo/organic-food-background-vegetables-basket_135427-233.jpg?w=740)",
-      }}
-    >
-      <div className="hero-overlay bg-opacity-60"></div>
-      <div className="hero-content text-center text-neutral-content">
-        <div className="max-w-md">
-          <h1 className="mb-5 text-5xl font-bold">Welcome To Online Fruties</h1>
-          <p className="mb-5">
-            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-            excepturi exercitationem quasi. In deleniti eaque aut repudiandae et
-            a id nisi.
-          </p>
-        </div>
+    <Carousel>
+      <div>
+        <img src={img1} />
       </div>
-    </div>
+      <div>
+        <img src={img2} />
+      </div>
+      <div>
+        <img src={img3} />
+      </div>
+      <div>
+        <img src={img4} />
+      </div>
+      <div>
+        <img src={img6} />
+      </div>
+    </Carousel>
   );
 };
 

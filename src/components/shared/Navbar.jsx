@@ -6,8 +6,9 @@ const Navbar = () => {
   const handleLogout = async () => {
     await logout();
   };
+
   return (
-    <div className="navbar sticky top-0 z-10 bg-gray-100 border border-gray-300">
+    <div className="navbar fixed z-10 top-0 bg-black opacity-50 w-[1400px] text-white px-5">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -35,7 +36,7 @@ const Navbar = () => {
             </li>
             <li>
               <a>Catagory</a>
-              <ul className="p-2">
+              <ul className="p-2 text-white bg-black">
                 <li>
                   <Link to="/vegitables">Vegitables</Link>
                 </li>
@@ -73,7 +74,7 @@ const Navbar = () => {
           <li>
             <details>
               <summary>Catagory</summary>
-              <ul className="w-[300px]">
+              <ul className="w-[300px]  text-white bg-black">
                 <div className="flex gap-4">
                   <div>
                     <li>
@@ -114,7 +115,7 @@ const Navbar = () => {
               "https://img.freepik.com/premium-vector/person-icon-vector-design-template-user-sign-person-symbol-human-avatar-flat-style_23648-1744.jpg?w=740"
             }
             alt="user image"
-            className={`w-10 rounded-full mr-4`}
+            className={`w-10 rounded-full mr-4 bg-white`}
           />
         )}
         {user ? (
