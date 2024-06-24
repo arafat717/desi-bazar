@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
+import { FaShoppingCart } from "react-icons/fa";
 
 const Navbar = () => {
   const { user, logout } = useAuth();
@@ -61,6 +62,14 @@ const Navbar = () => {
               <Link to="/contact">Contact</Link>
             </li>
             <li>
+              <Link>
+                <p className="flex gap-2 items-center">
+                  <FaShoppingCart className="text-2xl text-white"></FaShoppingCart>
+                  <div className="badge badge-secondary">+0</div>
+                </p>
+              </Link>
+            </li>
+            <li>
               <Link to="/dashboard">Dashboard</Link>
             </li>
           </ul>
@@ -107,6 +116,14 @@ const Navbar = () => {
           </li>
           <li>
             <Link to="/contact">Contact</Link>
+          </li>
+          <li>
+            <Link to="/">
+              <p className="flex gap-2 items-center">
+                <FaShoppingCart className="text-2xl text-white"></FaShoppingCart>
+                <div className="badge badge-secondary">+0</div>
+              </p>
+            </Link>
           </li>
           <li>
             <Link to="/dashboard">Dashboard</Link>
