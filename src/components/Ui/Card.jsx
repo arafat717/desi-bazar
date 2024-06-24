@@ -5,10 +5,12 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
 import toast from "react-hot-toast";
 import Swal from "sweetalert2";
+import useCart from "../../hooks/useCart";
 
 /* eslint-disable react/no-unescaped-entities */
 const Card = ({ food }) => {
   const { user } = useAuth();
+  const [, refetch] = useCart();
   const navigate = useNavigate();
   const location = useLocation();
   const { image, name, price, description, _id } = food;
@@ -31,6 +33,7 @@ const Card = ({ food }) => {
       })
         .then((res) => res.json())
         .then((data) => {
+          refetch();
           if (data.insertedId) {
             toast.success("Product add Successful");
           }

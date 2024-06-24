@@ -5,7 +5,6 @@ import Card from "../../components/Ui/Card";
 /* eslint-disable react/no-unescaped-entities */
 const AllProduct = () => {
   const [seaFood, setSeaFood] = useState();
-  console.log(seaFood);
 
   useEffect(() => {
     fetch("http://localhost:5000/vegitables")
