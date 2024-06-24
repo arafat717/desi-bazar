@@ -123,7 +123,7 @@ const Navbar = () => {
             <Link to="/contact">Contact</Link>
           </li>
           <li>
-            <Link to="/">
+            <Link to="/dashboard/my-cart">
               <p className="flex gap-2 items-center">
                 <FaShoppingCart className="text-2xl text-white"></FaShoppingCart>
                 <div className="badge badge-secondary">

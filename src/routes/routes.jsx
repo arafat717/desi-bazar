@@ -21,6 +21,7 @@ import AddDairy from "../components/DashboardLayout/AddProduct/AddDairy";
 import DairyEdit from "../components/DashboardLayout/EditProduct/DairyEdit";
 import EditProfile from "../components/DashboardLayout/EditProduct/EditProfile";
 import Shop from "../pages/Shop";
+import MyCart from "../components/DashboardLayout/userDashboard/MyCart";
 
 const router = createBrowserRouter([
   {
@@ -109,6 +110,10 @@ const router = createBrowserRouter([
       {
         path: "/dashboard/fruits-manage",
         element: <FrutiesManage></FrutiesManage>,
+      },
+      {
+        path: "/dashboard/my-cart",
+        element: <MyCart></MyCart>,
       },
       {
         path: "/dashboard/product-edit/:id",
