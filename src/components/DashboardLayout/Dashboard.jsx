@@ -1,7 +1,11 @@
 import { Helmet } from "react-helmet-async";
 import { Link, Outlet } from "react-router-dom";
+import useCart from "../../hooks/useCart";
 
 const Dashboard = () => {
+  const [cart] = useCart();
+  // const isAdmin = true;
+  const isAdmin = false;
   return (
     <div className="drawer lg:drawer-open">
       <Helmet>
@@ -26,33 +30,49 @@ const Dashboard = () => {
 
         <ul className="menu p-4 w-80 min-h-full bg-gray-200 text-base-content">
           {/* Sidebar content here */}
-          <h1 className="text-2xl font-bold">Welcome Dashboard</h1>
-          <p className="mt-6 font-bold">Manage All Products</p>
-          <li>
-            <Link to="/dashboard/fruits-manage">Fruits-Manage</Link>
-          </li>
-          <li>
-            <Link to="/dashboard/dairy-manage">Dairy-Manage</Link>
-          </li>
-          <li>
-            <Link to="/dashboard/vegitables-manage">Vegitables-Manage</Link>
-          </li>
-          <li>
-            <Link to="/dashboard/meat-manage">Meat-Manage</Link>
-          </li>
-          <p className="mt-6 font-bold">Add Products</p>
+          {isAdmin ? (
+            <>
+              <h1 className="text-2xl font-bold">Admin Dashboard</h1>
+              <p className="mt-6 font-bold">Manage All Products</p>
+              <li>
+                <Link to="/dashboard/fruits-manage">Fruits-Manage</Link>
+              </li>
+              <li>
+                <Link to="/dashboard/dairy-manage">Dairy-Manage</Link>
+              </li>
+              <li>
+                <Link to="/dashboard/vegitables-manage">Vegitables-Manage</Link>
+              </li>
+              <li>
+                <Link to="/dashboard/meat-manage">Meat-Manage</Link>
+              </li>
+              <p className="mt-6 font-bold">Add Products</p>
 
-          <li>
-            <Link to="/dashboard/add-dairy">Add-Product</Link>
-          </li>
-          <p className="mt-6 font-bold">User Management </p>
-          <li>
-            <Link to="/dashboard/user-manage">User-Manage</Link>
-          </li>
-          <p className="mt-6 font-bold">My Products</p>
-          <li>
-            <Link to="/dashboard/my-cart">My Cart</Link>
-          </li>
+              <li>
+                <Link to="/dashboard/add-dairy">Add-Product</Link>
+              </li>
+              <p className="mt-6 font-bold">User Management </p>
+              <li>
+                <Link to="/dashboard/all-users">All Users</Link>
+              </li>
+            </>
+          ) : (
+            <>
+              <h1 className="text-2xl font-bold">User Dashboard</h1>
+              <p className="mt-6 font-bold">User Management </p>
+              <li>
+                <Link to="/dashboard/my-cart">
+                  My Cart
+                  <div className="badge badge-secondary">
+                    +{cart?.length || 0}
+                  </div>
+                </Link>
+              </li>
+              <li>
+                <Link to="/dashboard/user-manage">Update Profile</Link>
+              </li>
+            </>
+          )}
           <hr className="border border-green-300 my-6" />
           <li>
             <Link to="/">Home</Link>

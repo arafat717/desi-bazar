@@ -22,6 +22,7 @@ import DairyEdit from "../components/DashboardLayout/EditProduct/DairyEdit";
 import EditProfile from "../components/DashboardLayout/EditProduct/EditProfile";
 import Shop from "../pages/Shop";
 import MyCart from "../components/DashboardLayout/userDashboard/MyCart";
+import AllUsers from "../components/DashboardLayout/AllUsers";
 
 const router = createBrowserRouter([
   {
@@ -164,6 +165,10 @@ const router = createBrowserRouter([
       {
         path: "/dashboard/user-manage",
         element: <UserManagement></UserManagement>,
+      },
+      {
+        path: "/dashboard/all-users",
+        element: <AllUsers></AllUsers>,
       },
     ],
   },

@@ -1,10 +1,40 @@
 import { AiFillDelete } from "react-icons/ai";
 import useCart from "../../../hooks/useCart";
+import Swal from "sweetalert2";
 
 const MyCart = () => {
-  const [cart] = useCart();
+  const [cart, refetch] = useCart();
   const total = cart?.reduce((sum, item) => parseFloat(item.price) + sum, 0);
   const totalsum = total?.toFixed(2);
+
+  const handleDelete = (item) => {
+    Swal.fire({
+      title: "Are you sure?",
+      text: "You won't be able to revert this!",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Yes, delete it!",
+    }).then((result) => {
+      if (result.isConfirmed) {
+        fetch(`http://localhost:5000/carts/${item._id}`, {
+          method: "DELETE",
+        })
+          .then((res) => res.json())
+          .then((data) => {
+            if (data.deletedCount > 0) {
+              refetch();
+              Swal.fire({
+                title: "Deleted!",
+                text: "Your file has been deleted.",
+                icon: "success",
+              });
+            }
+          });
+      }
+    });
+  };
 
   return (
     <div className="w-full">
@@ -28,7 +58,7 @@ const MyCart = () => {
             </tr>
           </thead>
           <tbody>
-            {cart.map((item, index) => (
+            {cart?.map((item, index) => (
               <tr key={item._id}>
                 <th>{index + 1}</th>
                 <td>
@@ -42,7 +72,10 @@ const MyCart = () => {
                 <td>{item?.name}</td>
                 <td>${item?.price}</td>
                 <th>
-                  <AiFillDelete className="text-white bg-red-600 p-1 rounded-lg cursor-pointer text-4xl hover:bg-black duration-300" />
+                  <AiFillDelete
+                    onClick={() => handleDelete(item)}
+                    className="text-white bg-red-600 p-1 rounded-lg cursor-pointer text-4xl hover:bg-black duration-300"
+                  />
                 </th>
               </tr>
             ))}
