@@ -1,4 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
+import toast from "react-hot-toast";
 import { AiFillDelete } from "react-icons/ai";
 import { FaUserShield } from "react-icons/fa";
 import Swal from "sweetalert2";
@@ -12,8 +13,18 @@ const AllUsers = () => {
     },
   });
 
-  const handleMakeAdmin = (id) => {
-    console.log(id);
+  const handleMakeAdmin = (user) => {
+    fetch(`http://localhost:5000/users/admin/${user._id}`, {
+      method: "PATCH",
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+        if (data.modifiedCount) {
+          refetch();
+          toast.success(`${user.name} is now admin now!`);
+        }
+      });
   };
 
   const handleDelete = (item) => {
@@ -27,7 +38,7 @@ const AllUsers = () => {
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`http://localhost:5000/user/${item._id}`, {
+        fetch(`http://localhost:5000/users/${item._id}`, {
           method: "DELETE",
         })
           .then((res) => res.json())
@@ -64,13 +75,13 @@ const AllUsers = () => {
             <tr key={item._id}>
               <th>{index + 1}</th>
               <td>{item?.name}</td>
-              <td>${item?.email}</td>
+              <td>{item?.email}</td>
               <td>
-                {users.role === "admin" ? (
+                {item.role === "admin" ? (
                   "admin"
                 ) : (
                   <FaUserShield
-                    onClick={() => handleMakeAdmin(item._id)}
+                    onClick={() => handleMakeAdmin(item)}
                     className="text-white bg-purple-600 p-1 rounded-lg cursor-pointer text-4xl hover:bg-black duration-300"
                   ></FaUserShield>
                 )}
