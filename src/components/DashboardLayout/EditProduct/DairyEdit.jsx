@@ -29,7 +29,18 @@ const DairyEdit = () => {
         reset();
         toast.success("Update Successful");
       });
-    navigate("/dashboard/fruits-manage");
+    if (data.catagory == "fruits") {
+      navigate("/dashboard/fruits-manage");
+    }
+    if (data.catagory == "vegitables") {
+      navigate("/dashboard/vegitables-manage");
+    }
+    if (data.catagory == "dairy") {
+      navigate("/dashboard/dairy-manage");
+    }
+    if (data.catagory == "meat") {
+      navigate("/dashboard/meat-manage");
+    }
   };
   return (
     <div className="flex justify-center w-full mx-auto">

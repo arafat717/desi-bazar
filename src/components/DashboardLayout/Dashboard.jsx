@@ -1,10 +1,16 @@
 import { Helmet } from "react-helmet-async";
 import { Link, Outlet } from "react-router-dom";
 import useCart from "../../hooks/useCart";
+import useAdmin from "./useAdmin";
+import Loading from "../Loading";
 
 const Dashboard = () => {
   const [cart] = useCart();
-  const isAdmin = true;
+  const [isAdmin, isLoading] = useAdmin();
+  console.log(isAdmin?.admin);
+
+  if (isLoading) return <Loading></Loading>;
+
   // const isAdmin = false;
   return (
     <div className="drawer lg:drawer-open">

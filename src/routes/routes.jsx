@@ -23,6 +23,7 @@ import EditProfile from "../components/DashboardLayout/EditProduct/EditProfile";
 import Shop from "../pages/Shop";
 import MyCart from "../components/DashboardLayout/userDashboard/MyCart";
 import AllUsers from "../components/DashboardLayout/AllUsers";
+import AdminRoutes from "./AdminRoutes";
 
 const router = createBrowserRouter([
   {
@@ -106,11 +107,19 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/dashboard",
-        element: <FrutiesManage></FrutiesManage>,
+        element: (
+          <AdminRoutes>
+            <FrutiesManage></FrutiesManage>
+          </AdminRoutes>
+        ),
       },
       {
         path: "/dashboard/fruits-manage",
-        element: <FrutiesManage></FrutiesManage>,
+        element: (
+          <AdminRoutes>
+            <FrutiesManage></FrutiesManage>
+          </AdminRoutes>
+        ),
       },
       {
         path: "/dashboard/my-cart",
@@ -118,13 +127,21 @@ const router = createBrowserRouter([
       },
       {
         path: "/dashboard/product-edit/:id",
-        element: <DairyEdit></DairyEdit>,
+        element: (
+          <AdminRoutes>
+            <DairyEdit></DairyEdit>
+          </AdminRoutes>
+        ),
         loader: ({ params }) =>
           fetch(`http://localhost:5000/product/${params.id}`),
       },
       {
         path: "/dashboard/vegitables-manage",
-        element: <VegitablesManage></VegitablesManage>,
+        element: (
+          <AdminRoutes>
+            <VegitablesManage></VegitablesManage>
+          </AdminRoutes>
+        ),
       },
       {
         path: "/dashboard/product-edit/:id",
@@ -140,7 +157,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/dashboard/dairy-manage",
-        element: <DairyManage></DairyManage>,
+        element: (
+          <AdminRoutes>
+            <DairyManage></DairyManage>
+          </AdminRoutes>
+        ),
       },
       {
         path: "/dashboard/product-edit/:id",
@@ -160,7 +181,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/dashboard/add-dairy",
-        element: <AddDairy></AddDairy>,
+        element: (
+          <AdminRoutes>
+            <AddDairy></AddDairy>
+          </AdminRoutes>
+        ),
       },
       {
         path: "/dashboard/user-manage",
@@ -168,7 +193,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/dashboard/all-users",
-        element: <AllUsers></AllUsers>,
+        element: (
+          <AdminRoutes>
+            <AllUsers></AllUsers>
+          </AdminRoutes>
+        ),
       },
     ],
   },
