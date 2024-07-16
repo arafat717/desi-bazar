@@ -24,6 +24,7 @@ import Shop from "../pages/Shop";
 import MyCart from "../components/DashboardLayout/userDashboard/MyCart";
 import AllUsers from "../components/DashboardLayout/AllUsers";
 import AdminRoutes from "./AdminRoutes";
+import Payment from "../components/DashboardLayout/Payment/Payment";
 
 const router = createBrowserRouter([
   {
@@ -106,14 +107,6 @@ const router = createBrowserRouter([
     ),
     children: [
       {
-        path: "/dashboard",
-        element: (
-          <AdminRoutes>
-            <FrutiesManage></FrutiesManage>
-          </AdminRoutes>
-        ),
-      },
-      {
         path: "/dashboard/fruits-manage",
         element: (
           <AdminRoutes>
@@ -124,6 +117,10 @@ const router = createBrowserRouter([
       {
         path: "/dashboard/my-cart",
         element: <MyCart></MyCart>,
+      },
+      {
+        path: "/dashboard/payment",
+        element: <Payment></Payment>,
       },
       {
         path: "/dashboard/product-edit/:id",
@@ -145,7 +142,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/dashboard/product-edit/:id",
-        element: <DairyEdit></DairyEdit>,
+        element: (
+          <AdminRoutes>
+            <DairyEdit></DairyEdit>
+          </AdminRoutes>
+        ),
         loader: ({ params }) =>
           fetch(`http://localhost:5000/product/${params.id}`),
       },

@@ -7,7 +7,6 @@ import Loading from "../Loading";
 const Dashboard = () => {
   const [cart] = useCart();
   const [isAdmin, isLoading] = useAdmin();
-  console.log(isAdmin?.admin);
 
   if (isLoading) return <Loading></Loading>;
 
