@@ -8,7 +8,7 @@ import img5 from "../../../public/c-img-5.webp";
 
 const MarketCatagory = () => {
   return (
-    <div className="px-10 w-full mx-auto">
+    <div className="px-10 max-w-screen-xl mx-auto mt-8 mb-12">
       <div className="md:flex justify-between items-center my-8 ">
         <div>
           <h1 className="px-10 text-2xl font-bold">
@@ -24,7 +24,7 @@ const MarketCatagory = () => {
           </Link>
         </div>
       </div>
-      <div className="flex flex-wrap justify-around items-center gap-6 mx-auto">
+      <div className="flex justify-around items-center gap-3 mx-auto">
         <div className="flex flex-col justify-center items-center">
           <div className="w-60 h-60">
             <img
@@ -87,17 +87,17 @@ const MarketCatagory = () => {
           </div>
         </div>
         {/* <div className="flex flex-col justify-center items-center">
-        <div className="w-60 h-60">
-          <img
-            className="bg-gray-100 rounded p-14 hover:border border-green-500"
-            src={img6}
-            alt=""
-          />
-        </div>
-        <div className="-ml-12">
-          <h1 className="-mt-6 text-xl font-bold text-gray-400">Fruits</h1>
-        </div>
-      </div> */}
+          <div className="w-60 h-60">
+            <img
+              className="bg-gray-100 rounded p-14 hover:border border-green-500"
+              src={img6}
+              alt=""
+            />
+          </div>
+          <div className="-ml-12">
+            <h1 className="-mt-6 text-xl font-bold text-gray-400">Fruits</h1>
+          </div>
+        </div> */}
       </div>
     </div>
   );
