@@ -6,6 +6,7 @@ import FruitsSection from "./FruitsSection";
 import MeatSeaFood from "./MeatSeaFood";
 import MarketCatagory from "../../components/MarketCatagory/MarketCatagory";
 import ProductBanner from "../../components/ProductBanner/ProductBanner";
+import TopSellingProduct from "../../components/TopSellingProduct/TopSellingProduct";
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
       <MarketCatagory></MarketCatagory>
       <ProductBanner></ProductBanner>
       <AllProduct></AllProduct>
+      <TopSellingProduct></TopSellingProduct>
       <FruitsSection></FruitsSection>
       <DairyandEggSection></DairyandEggSection>
       <MeatSeaFood></MeatSeaFood>
