@@ -1,0 +1,23 @@
+.mainCard {
+  position: relative;
+  background-color: white;
+  display: block;
+}
+
+.customButton {
+  transition: 0.3s ease, transform 0.3s ease;
+}
+
+.icons {
+  position: absolute;
+  top: 10px;
+  left: 8px;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s ease-in-out;
+}
+
+.mainCard:hover .icons {
+  visibility: visible;
+  opacity: 1;
+}

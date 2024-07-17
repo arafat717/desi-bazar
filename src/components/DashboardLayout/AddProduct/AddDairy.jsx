@@ -34,7 +34,7 @@ const AddDairy = () => {
           image: image_url,
         };
         console.log(newItem);
-        fetch("http://localhost:5000/product/", {
+        fetch("https://grocary-server.vercel.app/product/", {
           method: "POST",
           headers: {
             "Content-type": "application/json",

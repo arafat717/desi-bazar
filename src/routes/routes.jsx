@@ -25,6 +25,8 @@ import MyCart from "../components/DashboardLayout/userDashboard/MyCart";
 import AllUsers from "../components/DashboardLayout/AllUsers";
 import AdminRoutes from "./AdminRoutes";
 import Payment from "../components/DashboardLayout/Payment/Payment";
+import UserHome from "../components/DashboardLayout/UserHome/UserHome";
+import AdminHome from "../components/DashboardLayout/AdminHome/AdminHome";
 
 const router = createBrowserRouter([
   {
@@ -67,26 +69,26 @@ const router = createBrowserRouter([
         path: "product/:id",
         element: <DetailsPage></DetailsPage>,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/product/${params.id}`),
+          fetch(`https://grocary-server.vercel.app/product/${params.id}`),
       },
       {
         path: "product/:id",
         element: <DetailsPage></DetailsPage>,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/product/${params.id}`),
+          fetch(`https://grocary-server.vercel.app/product/${params.id}`),
       },
 
       {
         path: "product/:id",
         element: <DetailsPage></DetailsPage>,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/product/${params.id}`),
+          fetch(`https://grocary-server.vercel.app/product/${params.id}`),
       },
       {
         path: "product/:id",
         element: <DetailsPage></DetailsPage>,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/product/${params.id}`),
+          fetch(`https://grocary-server.vercel.app/product/${params.id}`),
       },
       {
         path: "/login",
@@ -106,6 +108,14 @@ const router = createBrowserRouter([
       </PrivateRoute>
     ),
     children: [
+      {
+        path: "/dashboard/userhome",
+        element: <UserHome></UserHome>,
+      },
+      {
+        path: "/dashboard/adminhome",
+        element: <AdminHome></AdminHome>,
+      },
       {
         path: "/dashboard/fruits-manage",
         element: (
@@ -130,7 +140,7 @@ const router = createBrowserRouter([
           </AdminRoutes>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/product/${params.id}`),
+          fetch(`https://grocary-server.vercel.app/product/${params.id}`),
       },
       {
         path: "/dashboard/vegitables-manage",
@@ -148,13 +158,13 @@ const router = createBrowserRouter([
           </AdminRoutes>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/product/${params.id}`),
+          fetch(`https://grocary-server.vercel.app/product/${params.id}`),
       },
       {
         path: "/dashboard/user-edit/:id",
         element: <EditProfile></EditProfile>,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/user/get/${params.id}`),
+          fetch(`https://grocary-server.vercel.app/user/get/${params.id}`),
       },
       {
         path: "/dashboard/dairy-manage",
@@ -168,7 +178,7 @@ const router = createBrowserRouter([
         path: "/dashboard/product-edit/:id",
         element: <DairyEdit></DairyEdit>,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/product/${params.id}`),
+          fetch(`https://grocary-server.vercel.app/product/${params.id}`),
       },
       {
         path: "/dashboard/meat-manage",

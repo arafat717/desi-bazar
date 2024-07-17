@@ -7,16 +7,16 @@ const AllProduct = () => {
   const [seaFood, setSeaFood] = useState();
 
   useEffect(() => {
-    fetch("http://localhost:5000/vegitables")
+    fetch("https://grocary-server.vercel.app/vegitables")
       .then((res) => res.json())
       .then((data) => setSeaFood(data));
   }, []);
   return (
-    <div className="my-28">
+    <div className="my-28 bg-green-50 py-14">
       <div className="md:flex justify-between items-center">
         <div>
           <h1 className="px-10 text-2xl font-bold">
-            Best <span className="text-green-500">Vegitables</span> from us
+            Fresh <span className="text-green-500">Vegitables</span>
           </h1>
           <hr className="w-[200px] ml-10 border border-green-300 mt-2" />
         </div>
@@ -28,7 +28,7 @@ const AllProduct = () => {
           </Link>
         </div>
       </div>
-      <div className="grid md:grid-cols-3 sm:grid-cols-2 lg:grid-cols-5 mx-auto gap-2 px-10 mt-8 mb-20">
+      <div className="grid gap-2 md:grid-cols-3 sm:grid-cols-2 lg:grid-cols-5 mx-auto px-10 mt-8 mb-20">
         {seaFood &&
           seaFood
             .slice(0, 5)

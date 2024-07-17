@@ -5,7 +5,7 @@ import { MdSystemUpdateAlt } from "react-icons/md";
 import { Link } from "react-router-dom";
 const Table = ({ data, handleDeleteProduct }) => {
   const handleDelete = async (id) => {
-    await fetch(`http://localhost:5000/product/${id}`, {
+    await fetch(`https://grocary-server.vercel.app/product/${id}`, {
       method: "DELETE",
     })
       .then((res) => res.json())

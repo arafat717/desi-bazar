@@ -2,9 +2,11 @@ import { Link } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
 import { FaShoppingCart } from "react-icons/fa";
 import useCart from "../../hooks/useCart";
+import useAdmin from "../DashboardLayout/useAdmin";
 
 const Navbar = () => {
   const [cart] = useCart();
+  const [isAdmin] = useAdmin();
   console.log(cart);
   const { user, logout } = useAuth();
   const handleLogout = async () => {
@@ -12,7 +14,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="navbar fixed z-10 top-0 bg-black opacity-40 max-w-[1400px] mx-auto text-white font-bold px-5">
+    <div className="navbar sticky z-10 top-0 bg-green-600 max-w-[1400px] mx-auto text-white font-bold px-5">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -74,9 +76,16 @@ const Navbar = () => {
                 </p>
               </Link>
             </li>
-            <li>
-              <Link to="/dashboard">Dashboard</Link>
-            </li>
+
+            {isAdmin ? (
+              <li>
+                <Link to="/dashboard/adminhome">Dashboard</Link>
+              </li>
+            ) : (
+              <li>
+                <Link to="/dashboard/userhome">Dashboard</Link>
+              </li>
+            )}
           </ul>
         </div>
         <a className="btn btn-ghost text-xl">
@@ -132,9 +141,15 @@ const Navbar = () => {
               </p>
             </Link>
           </li>
-          <li>
-            <Link to="/dashboard">Dashboard</Link>
-          </li>
+          {isAdmin ? (
+            <li>
+              <Link to="/dashboard/adminhome">Dashboard</Link>
+            </li>
+          ) : (
+            <li>
+              <Link to="/dashboard/userhome">Dashboard</Link>
+            </li>
+          )}
         </ul>
       </div>
       <div className="navbar-end">

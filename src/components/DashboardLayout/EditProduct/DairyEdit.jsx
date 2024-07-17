@@ -16,7 +16,7 @@ const DairyEdit = () => {
   } = useForm();
 
   const onSubmit = async (data) => {
-    await fetch(`http://localhost:5000/product/${dairy._id}`, {
+    await fetch(`https://grocary-server.vercel.app/product/${dairy._id}`, {
       method: "PATCH",
       headers: {
         "Content-type": "application/json",

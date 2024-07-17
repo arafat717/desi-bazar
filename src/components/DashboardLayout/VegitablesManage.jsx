@@ -5,7 +5,7 @@ const VegitablesManage = () => {
   const [seaFood, setSeaFood] = useState();
 
   useEffect(() => {
-    fetch("http://localhost:5000/vegitables")
+    fetch("https://grocary-server.vercel.app/vegitables")
       .then((res) => res.json())
       .then((data) => setSeaFood(data));
   }, []);

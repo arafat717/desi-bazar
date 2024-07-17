@@ -7,7 +7,7 @@ const AllVegitables = () => {
   const [seaFood, setSeaFood] = useState();
 
   useEffect(() => {
-    fetch("http://localhost:5000/vegitables")
+    fetch("https://grocary-server.vercel.app/vegitables")
       .then((res) => res.json())
       .then((data) => setSeaFood(data));
   }, []);
@@ -20,7 +20,7 @@ const AllVegitables = () => {
         Best <span className="text-green-500">Vegitables</span> from us
       </h1>
       <hr className="w-[300px] ml-10 border border-green-300 mt-2" />
-      <div className="grid md:grid-cols-3 sm:grid-cols-2 lg:grid-cols-5 mx-auto gap-2 px-10 mt-16 mb-20">
+      <div className="grid md:grid-cols-3 sm:grid-cols-2 lg:grid-cols-4 mx-auto gap-2 px-10 mt-16 mb-20">
         {seaFood &&
           seaFood.map((food) => <Card key={food._id} food={food}></Card>)}
       </div>

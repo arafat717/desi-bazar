@@ -38,7 +38,11 @@ const Dashboard = () => {
           {isAdmin ? (
             <>
               <h1 className="text-2xl font-bold">Admin Dashboard</h1>
+              <li>
+                <Link to="/dashboard/adminhome">Admin-Home</Link>
+              </li>
               <p className="mt-6 font-bold">Manage All Products</p>
+
               <li>
                 <Link to="/dashboard/fruits-manage">Fruits-Manage</Link>
               </li>

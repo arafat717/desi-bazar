@@ -15,7 +15,7 @@ const EditProfile = () => {
 
   const onSubmit = async (data) => {
     console.log(data);
-    await fetch(`http://localhost:5000/user/${data?.email}`, {
+    await fetch(`https://grocary-server.vercel.app/user/${data?.email}`, {
       method: "PATCH",
       headers: {
         "Content-type": "application/json",

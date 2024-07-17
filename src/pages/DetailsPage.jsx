@@ -21,7 +21,7 @@ const DetailsPage = () => {
         price,
         email: user.email,
       };
-      fetch("http://localhost:5000/carts", {
+      fetch("https://grocary-server.vercel.app/carts", {
         method: "POST",
         headers: {
           "content-type": "application/json",

@@ -31,7 +31,7 @@ const Resistration = () => {
             email: data?.user?.email,
             name: name,
           };
-          fetch("http://localhost:5000/user", {
+          fetch("https://grocary-server.vercel.app/user", {
             method: "POST",
             headers: {
               "Content-Type": "application/json",

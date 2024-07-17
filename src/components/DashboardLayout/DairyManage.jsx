@@ -5,7 +5,7 @@ const DairyManage = () => {
   const [seaFood, setSeaFood] = useState();
 
   useEffect(() => {
-    fetch("http://localhost:5000/dairy")
+    fetch("https://grocary-server.vercel.app/dairy")
       .then((res) => res.json())
       .then((data) => setSeaFood(data));
   }, []);

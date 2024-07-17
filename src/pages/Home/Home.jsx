@@ -4,6 +4,7 @@ import Banner from "./Banner";
 import DairyandEggSection from "./DairyandEggSection";
 import FruitsSection from "./FruitsSection";
 import MeatSeaFood from "./MeatSeaFood";
+import MarketCatagory from "../../components/MarketCatagory/MarketCatagory";
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
         <title>Online Bazar - Home</title>
       </Helmet>
       <Banner></Banner>
+      <MarketCatagory></MarketCatagory>
       <AllProduct></AllProduct>
       <FruitsSection></FruitsSection>
       <DairyandEggSection></DairyandEggSection>

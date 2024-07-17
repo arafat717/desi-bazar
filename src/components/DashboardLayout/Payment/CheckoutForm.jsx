@@ -17,7 +17,7 @@ const CheckoutForm = ({ price, cart }) => {
   useEffect(() => {
     if (price) {
       console.log(price);
-      fetch("http://localhost:5000/create-payment-intent", {
+      fetch("https://grocary-server.vercel.app/create-payment-intent", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ price }),
@@ -99,7 +99,7 @@ const CheckoutForm = ({ price, cart }) => {
         status: "service is pending",
         productName: cart.map((item) => item.name),
       };
-      fetch("http://localhost:5000/payments", {
+      fetch("https://grocary-server.vercel.app/payments", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payment),
