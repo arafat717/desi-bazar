@@ -5,7 +5,7 @@ import img3 from "../../../public/c-shop-img-3.webp";
 
 const ProductBanner = () => {
   return (
-    <div className="flex gap-5 max-w-screen-xl mx-auto my-16">
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-5 max-w-screen-xl mx-auto my-16">
       <div className="bg-green-100 flex flex-col items-center py-6">
         <div>
           <h1 className="text-xl font-bold">Fresh</h1>

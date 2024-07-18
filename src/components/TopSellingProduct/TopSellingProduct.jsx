@@ -11,7 +11,7 @@ const TopSellingProduct = () => {
       .then((data) => setProducts(data));
   }, []);
   return (
-    <div>
+    <div className="px-1 md:px-10">
       <div className="md:flex justify-between items-center my-8 ">
         <div>
           <h1 className="px-10 text-2xl font-bold">
@@ -27,7 +27,7 @@ const TopSellingProduct = () => {
           </Link>
         </div>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {product.slice(0, 6).map((pro) => (
           <TopCard key={pro._id} pro={pro}></TopCard>
         ))}

@@ -24,7 +24,7 @@ const MarketCatagory = () => {
           </Link>
         </div>
       </div>
-      <div className="flex justify-around items-center gap-3 mx-auto">
+      <div className="grid grid-cols-2 md:grid-cols-5 gap-3 mx-auto">
         <div className="flex flex-col justify-center items-center">
           <div className="w-60 h-60">
             <img

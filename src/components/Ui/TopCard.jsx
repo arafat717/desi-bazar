@@ -116,7 +116,7 @@ const TopCard = ({ pro }) => {
           </p>
           <button
             onClick={() => handleAddToCart(pro)}
-            className="customButton px-14 py-2 flex items-center justify-center gap-2 rounded bg-green-300 transition hover:bg-green-700 hover:text-white mt-5"
+            className="customButton w-[200px] h-[40px] flex items-center justify-center gap-2 rounded bg-green-300 transition hover:bg-green-700 hover:text-white mt-5"
           >
             <FaPlus className="mt-[2px]"></FaPlus>
             <span>Add To Cart</span>

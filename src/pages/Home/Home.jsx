@@ -7,6 +7,8 @@ import MeatSeaFood from "./MeatSeaFood";
 import MarketCatagory from "../../components/MarketCatagory/MarketCatagory";
 import ProductBanner from "../../components/ProductBanner/ProductBanner";
 import TopSellingProduct from "../../components/TopSellingProduct/TopSellingProduct";
+import FlashSale from "../../components/FlashSale/FlashSale";
+import FreshGrocery from "../../components/FreshGrocery/FreshGrocery";
 
 const Home = () => {
   return (
@@ -18,7 +20,9 @@ const Home = () => {
       <MarketCatagory></MarketCatagory>
       <ProductBanner></ProductBanner>
       <AllProduct></AllProduct>
+      <FlashSale></FlashSale>
       <TopSellingProduct></TopSellingProduct>
+      <FreshGrocery></FreshGrocery>
       <FruitsSection></FruitsSection>
       <DairyandEggSection></DairyandEggSection>
       <MeatSeaFood></MeatSeaFood>
