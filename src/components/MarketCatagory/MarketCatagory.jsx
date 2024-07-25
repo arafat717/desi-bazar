@@ -9,7 +9,7 @@ import img5 from "../../../public/c-img-5.webp";
 const MarketCatagory = () => {
   return (
     <div className="px-10 max-w-screen-xl mx-auto mt-8 mb-12">
-      <div className="md:flex justify-between items-center my-8 ">
+      <div className="md:flex justify-between items-center my-8">
         <div>
           <h1 className="px-10 text-2xl font-bold">
             Market <span className="text-green-500">Category</span>
@@ -25,7 +25,7 @@ const MarketCatagory = () => {
         </div>
       </div>
       <div className="grid grid-cols-2 md:grid-cols-5 gap-3 mx-auto">
-        <div className="flex flex-col justify-center items-center">
+        <div className="flex flex-col justify-center items-center cursor-pointer">
           <div className="w-60 h-60">
             <img
               className="bg-gray-100 rounded p-14 hover:border border-green-500"
@@ -37,7 +37,7 @@ const MarketCatagory = () => {
             <h1 className="-mt-6 text-xl font-bold text-gray-400">Fruits</h1>
           </div>
         </div>
-        <div className="flex flex-col justify-center items-center">
+        <div className="flex flex-col justify-center items-center cursor-pointer">
           <div className="w-60 h-60">
             <img
               className="bg-gray-100 rounded p-14 hover:border border-green-500"
@@ -46,10 +46,12 @@ const MarketCatagory = () => {
             />
           </div>
           <div className="-ml-12">
-            <h1 className="-mt-6 text-xl font-bold text-gray-400">Fruits</h1>
+            <h1 className="-mt-6 text-xl font-bold text-gray-400">
+              Vegitables
+            </h1>
           </div>
         </div>
-        <div className="flex flex-col justify-center items-center">
+        <div className="flex flex-col justify-center items-center cursor-pointer">
           <div className="w-60 h-60">
             <img
               className="bg-gray-100 rounded p-14 px-16 hover:border border-green-500"
@@ -58,10 +60,10 @@ const MarketCatagory = () => {
             />
           </div>
           <div className="-ml-12">
-            <h1 className="-mt-6 text-xl font-bold text-gray-400">Fruits</h1>
+            <h1 className="-mt-6 text-xl font-bold text-gray-400">Drinks</h1>
           </div>
         </div>
-        <div className="flex flex-col justify-center items-center">
+        <div className="flex flex-col justify-center items-center cursor-pointer">
           <div className="w-60 h-60">
             <img
               className="bg-gray-100 rounded p-14 hover:border border-green-500"
@@ -70,11 +72,11 @@ const MarketCatagory = () => {
             />
           </div>
           <div className="-ml-12">
-            <h1 className="-mt-6 text-xl font-bold text-gray-400">Fruits</h1>
+            <h1 className="-mt-6 text-xl font-bold text-gray-400">Meat</h1>
           </div>
         </div>
 
-        <div className="flex flex-col justify-center items-center">
+        <div className="flex flex-col justify-center items-center cursor-pointer">
           <div className="w-60 h-60">
             <img
               className="bg-gray-100 rounded p-14 px-16 hover:border border-green-500"
@@ -83,7 +85,7 @@ const MarketCatagory = () => {
             />
           </div>
           <div className="-ml-12">
-            <h1 className="-mt-6 text-xl font-bold text-gray-400">Fruits</h1>
+            <h1 className="-mt-6 text-xl font-bold text-gray-400">Coffe</h1>
           </div>
         </div>
         {/* <div className="flex flex-col justify-center items-center">
