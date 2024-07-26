@@ -1,9 +1,23 @@
 .mainCard {
   position: relative;
   background-color: white;
-  /* display: block;
-  box-sizing: border-box; */
+  box-sizing: border-box;
   box-shadow: 4px 3px 8px gray;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.mainCard:hover {
+  border: 1px solid green;
+  cursor: pointer;
+}
+
+.image-style {
+  transition: 0.3s ease, transform 0.3s ease;
+}
+
+.mainCard:hover .image-style {
+  transform: scale(1.15);
 }
 
 .customButton {
