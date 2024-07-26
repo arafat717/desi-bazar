@@ -1,7 +1,9 @@
 .mainCard {
   position: relative;
   background-color: white;
-  display: block;
+  /* display: block;
+  box-sizing: border-box; */
+  box-shadow: 4px 3px 8px gray;
 }
 
 .customButton {

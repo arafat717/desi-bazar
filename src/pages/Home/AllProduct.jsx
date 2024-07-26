@@ -28,10 +28,10 @@ const AllProduct = () => {
           </Link>
         </div>
       </div>
-      <div className="grid gap-2 md:grid-cols-3 sm:grid-cols-2 lg:grid-cols-5 mx-auto px-10 mt-8 mb-20">
+      <div className="grid gap-2 md:grid-cols-3 sm:grid-cols-2 lg:grid-cols-4 mx-auto px-16 mt-8 mb-20">
         {seaFood &&
           seaFood
-            .slice(0, 5)
+            .slice(0, 4)
             .map((food) => <Card key={food._id} food={food}></Card>)}
       </div>
     </div>

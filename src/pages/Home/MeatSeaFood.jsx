@@ -30,10 +30,10 @@ const MeatSeaFood = () => {
           </Link>
         </div>
       </div>
-      <div className="grid md:grid-cols-3 sm:grid-cols-2 lg:grid-cols-5 mx-auto gap-2 mt-8 mb-20 px-10">
+      <div className="grid md:grid-cols-3 sm:grid-cols-2 lg:grid-cols-4 mx-auto gap-2 mt-8 mb-20 px-16">
         {seaFood &&
           seaFood
-            .slice(0, 5)
+            .slice(0, 4)
             .map((food) => <Card key={food._id} food={food}></Card>)}
       </div>
     </div>
