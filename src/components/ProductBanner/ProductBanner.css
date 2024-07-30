@@ -1,0 +1,110 @@
+.button-11 {
+  color: white;
+  width: 130px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  border-radius: 5px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.button-11::after {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.884);
+  position: absolute;
+  width: 150px;
+  height: 55px;
+  border-radius: 5px;
+  transform: translate(-150px);
+  z-index: -1;
+  transition-property: all;
+  transition-duration: 500ms;
+  transition-timing-function: ease;
+}
+
+.button-11:hover {
+  color: white;
+}
+
+.button-11:hover:after {
+  transform: translate(0px);
+  color: white;
+}
+
+.button-2 {
+  color: white;
+  width: 130px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  border-radius: 5px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.button-2::after {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.884);
+  position: absolute;
+  width: 150px;
+  height: 55px;
+  border-radius: 5px;
+  transform: translate(-150px);
+  z-index: -1;
+  transition-property: all;
+  transition-duration: 500ms;
+  transition-timing-function: ease;
+}
+
+.button-2:hover {
+  color: white;
+}
+
+.button-2:hover:after {
+  transform: translate(0px);
+  color: white;
+}
+
+.button-3 {
+  color: white;
+  width: 130px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  border-radius: 5px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.button-3::after {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.884);
+  position: absolute;
+  width: 150px;
+  height: 55px;
+  border-radius: 5px;
+  transform: translate(-150px);
+  z-index: -1;
+  transition-property: all;
+  transition-duration: 500ms;
+  transition-timing-function: ease;
+}
+
+.button-3:hover {
+  color: white;
+}
+
+.button-3:hover:after {
+  transform: translate(0px);
+  color: white;
+}

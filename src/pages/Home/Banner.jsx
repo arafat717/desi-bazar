@@ -2,7 +2,7 @@
 import img from "../../../public/hero-img-1.webp";
 import { IoIosArrowForward } from "react-icons/io";
 import { BsCart3 } from "react-icons/bs";
-
+import "./Banner.css";
 const Banner = () => {
   return (
     <div className="px-4 sm:px-8 md:px-14 py-10 md:py-20 w-full">
@@ -24,12 +24,14 @@ const Banner = () => {
               Products.
             </p>
           </div>
-          <button className="bg-yellow-500 mt-8 px-4 py-3 sm:px-6 sm:py-4 flex justify-center items-center gap-2 rounded">
-            <span className="text-sm sm:text-[14px] font-semibold">
-              Shop Now
-            </span>
-            <IoIosArrowForward className="text-lg sm:text-[18px]"></IoIosArrowForward>
-          </button>
+          <div className="relative">
+            <button className="bg-yellow-600 button-1">
+              <span className="text-sm sm:text-[14px] font-semibold">
+                Shop Now
+              </span>
+              <IoIosArrowForward className="text-lg sm:text-[18px]"></IoIosArrowForward>
+            </button>
+          </div>
         </div>
         <div className="w-full md:w-1/2 mt-8 md:mt-0">
           <img src={img} alt="" className="mx-auto" />

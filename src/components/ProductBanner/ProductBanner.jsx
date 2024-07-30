@@ -2,6 +2,7 @@ import { IoIosArrowForward } from "react-icons/io";
 import img1 from "../../../public/c-shop-img-1.webp";
 import img2 from "../../../public/c-shop-img-2.webp";
 import img3 from "../../../public/c-shop-img-3.webp";
+import "./ProductBanner.css";
 
 const ProductBanner = () => {
   return (
@@ -12,12 +13,14 @@ const ProductBanner = () => {
           <h1 className="text-4xl font-bold my-2">
             Healthy and Good <br /> Fruits
           </h1>
-          <button className="bg-green-600 mt-8 px-4 py-3 sm:px-6 sm:py-4 flex justify-center items-center gap-2 rounded text-white">
-            <span className="text-sm sm:text-[14px] font-semibold">
-              Shop Now
-            </span>
-            <IoIosArrowForward className="text-lg sm:text-[18px]"></IoIosArrowForward>
-          </button>
+          <div className="relative">
+            <button className="bg-green-600 button-11">
+              <span className="text-sm sm:text-[14px] font-semibold">
+                Shop Now
+              </span>
+              <IoIosArrowForward className="text-lg sm:text-[18px]"></IoIosArrowForward>
+            </button>
+          </div>
         </div>
         <div>
           <img src={img1} alt="" />
@@ -29,12 +32,14 @@ const ProductBanner = () => {
           <h1 className="text-4xl font-bold my-2">
             Healthy and Good <br /> Fruits
           </h1>
-          <button className="bg-red-600 mt-8 px-4 py-3 sm:px-6 sm:py-4 flex justify-center items-center gap-2 rounded text-white">
-            <span className="text-sm sm:text-[14px] font-semibold ">
-              Shop Now
-            </span>
-            <IoIosArrowForward className="text-lg sm:text-[18px]"></IoIosArrowForward>
-          </button>
+          <div className="relative">
+            <button className="bg-red-600 button-2">
+              <span className="text-sm sm:text-[14px] font-semibold">
+                Shop Now
+              </span>
+              <IoIosArrowForward className="text-lg sm:text-[18px]"></IoIosArrowForward>
+            </button>
+          </div>
         </div>
         <div>
           <img src={img2} alt="" />
@@ -46,12 +51,14 @@ const ProductBanner = () => {
           <h1 className="text-4xl font-bold my-2">
             Healthy and Good <br /> Fruits
           </h1>
-          <button className="bg-purple-600 mt-8 px-4 py-3 sm:px-6 sm:py-4 flex justify-center items-center gap-2 rounded text-white">
-            <span className="text-sm sm:text-[14px] font-semibold">
-              Shop Now
-            </span>
-            <IoIosArrowForward className="text-lg sm:text-[18px]"></IoIosArrowForward>
-          </button>
+          <div className="relative">
+            <button className="bg-purple-600 button-3">
+              <span className="text-sm sm:text-[14px] font-semibold">
+                Shop Now
+              </span>
+              <IoIosArrowForward className="text-lg sm:text-[18px]"></IoIosArrowForward>
+            </button>
+          </div>
         </div>
         <div>
           <img src={img3} alt="" />

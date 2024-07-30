@@ -1,0 +1,36 @@
+.button-1 {
+  color: black;
+  width: 130px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  border-radius: 5px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.button-1::after {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.884);
+  position: absolute;
+  width: 150px;
+  height: 55px;
+  border-radius: 5px;
+  transform: translate(-150px);
+  z-index: -1;
+  transition-property: all;
+  transition-duration: 500ms;
+  transition-timing-function: ease;
+}
+
+.button-1:hover {
+  color: white;
+}
+
+.button-1:hover:after {
+  transform: translate(0px);
+  color: white;
+}

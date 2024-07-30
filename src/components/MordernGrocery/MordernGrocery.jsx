@@ -15,12 +15,20 @@ const MordernGrocery = () => {
           <h1 className="mb-5 text-2xl md:text-5xl font-bold">
             Get the best deal for Modern Grocery
           </h1>
-          <button className="bg-green-600 mt-8 px-4 py-3 sm:px-6 sm:py-4 flex items-center gap-2 rounded text-white">
+          {/* <button className="bg-green-600 mt-8 px-4 py-3 sm:px-6 sm:py-4 flex items-center gap-2 rounded text-white">
             <span className="text-sm sm:text-[14px] font-semibold">
               Shop Now
             </span>
             <IoIosArrowForward className="text-lg sm:text-[18px]"></IoIosArrowForward>
-          </button>
+          </button> */}
+          <div className="relative">
+            <button className="bg-green-600 button-1">
+              <span className="text-sm sm:text-[14px] font-semibold">
+                Shop Now
+              </span>
+              <IoIosArrowForward className="text-lg sm:text-[18px]"></IoIosArrowForward>
+            </button>
+          </div>
         </div>
       </div>
     </div>
