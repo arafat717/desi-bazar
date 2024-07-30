@@ -10,6 +10,7 @@ import TopSellingProduct from "../../components/TopSellingProduct/TopSellingProd
 import FlashSale from "../../components/FlashSale/FlashSale";
 import FreshGrocery from "../../components/FreshGrocery/FreshGrocery";
 import MordernGrocery from "../../components/MordernGrocery/MordernGrocery";
+import DiscountSection from "../../components/DiscountSection/DiscountSection";
 
 const Home = () => {
   return (
@@ -27,6 +28,7 @@ const Home = () => {
       <FruitsSection></FruitsSection>
       <MordernGrocery></MordernGrocery>
       <DairyandEggSection></DairyandEggSection>
+      <DiscountSection></DiscountSection>
     </>
   );
 };
