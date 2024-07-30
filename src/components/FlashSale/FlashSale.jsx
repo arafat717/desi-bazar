@@ -58,8 +58,8 @@ const FlashSale = () => {
             </div>
           </div>
         </div>
-        <div className="w-1/2">
-          <img className="hidden sm:block md:h-[470px]" src={img} alt="" />
+        <div className="w-1/2 p-0">
+          <img className="hidden sm:block md:h-[505px]" src={img} alt="" />
         </div>
       </div>
     </div>

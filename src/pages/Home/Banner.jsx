@@ -2,6 +2,9 @@
 import img from "../../../public/hero-img-1.webp";
 import { IoIosArrowForward } from "react-icons/io";
 import { BsCart3 } from "react-icons/bs";
+import { ImSpinner11 } from "react-icons/im";
+import { IoLockClosedOutline } from "react-icons/io5";
+import { GoTrophy } from "react-icons/go";
 import "./Banner.css";
 const Banner = () => {
   return (
@@ -38,21 +41,42 @@ const Banner = () => {
         </div>
       </div>
       <div className="text-white bg-green-600 py-6 flex flex-wrap justify-around items-center rounded mt-12 md:mt-32 gap-4 text-left md:gap-0 mx-auto">
-        {Array(4)
-          .fill()
-          .map((_, index) => (
-            <div key={index} className="flex text-left items-center gap-3">
-              <BsCart3 className="text-[30px] sm:text-[45px] -mt-2"></BsCart3>
-              <div>
-                <h1 className="font-bold text-sm sm:text-base">
-                  Free Shipping
-                </h1>
-                <p className="font-semibold text-xs sm:text-sm">
-                  When ordering over $100
-                </p>
-              </div>
-            </div>
-          ))}
+        <div className="flex text-left items-center gap-3">
+          <BsCart3 className="text-[30px] sm:text-[45px] -mt-2"></BsCart3>
+          <div>
+            <h1 className="font-bold text-sm sm:text-base">Free Shipping</h1>
+            <p className="font-semibold text-xs sm:text-sm">
+              When ordering over $100
+            </p>
+          </div>
+        </div>
+        <div className="flex text-left items-center gap-3">
+          <ImSpinner11 className="text-[30px] sm:text-[45px] -mt-2"></ImSpinner11>
+          <div>
+            <h1 className="font-bold text-sm sm:text-base">Free Return</h1>
+            <p className="font-semibold text-xs sm:text-sm">
+              Get Return within 30 days
+            </p>
+          </div>
+        </div>
+        <div className="flex text-left items-center gap-3">
+          <IoLockClosedOutline className="text-[30px] sm:text-[45px] -mt-2"></IoLockClosedOutline>
+          <div>
+            <h1 className="font-bold text-sm sm:text-base">Secure Payment</h1>
+            <p className="font-semibold text-xs sm:text-sm">
+              100% Secure Online Payment
+            </p>
+          </div>
+        </div>
+        <div className="flex text-left items-center gap-3">
+          <GoTrophy className="text-[30px] sm:text-[45px] -mt-2"></GoTrophy>
+          <div>
+            <h1 className="font-bold text-sm sm:text-base">Best Quality</h1>
+            <p className="font-semibold text-xs sm:text-sm">
+              Original Product Guarenteed
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );

@@ -16,13 +16,13 @@ const DiscountSection = () => {
             </p>
             <div className="flex">
               <input
-                className=" p-2 hidden md:p-4 md:w-96 text-black rounded-sm border border-none hover:border-none focus:border-none"
+                className=" p-2  md:p-4 md:w-96 text-black rounded-sm border border-none hover:border-none focus:border-none"
                 type="email"
                 name=""
                 id=""
                 placeholder="Email Address"
               />
-              <button className="bg-yellow-600 p-2 hidden md:p-4 text-black font-bold">
+              <button className=" bg-yellow-600 p-2  md:p-4 text-black font-bold">
                 Get The coupone
               </button>
             </div>
