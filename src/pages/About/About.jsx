@@ -1,4 +1,6 @@
 import { Helmet } from "react-helmet-async";
+import Cover from "../../components/Cover";
+import WhyChoseUsSection from "../WhyChoseUsSection/WhyChoseUsSection";
 
 const About = () => {
   return (
@@ -6,7 +8,8 @@ const About = () => {
       <Helmet>
         <title>Online Bazar - About</title>
       </Helmet>
-      <h1>hello from about</h1>
+      <Cover page="About Us"></Cover>
+      <WhyChoseUsSection></WhyChoseUsSection>
     </div>
   );
 };

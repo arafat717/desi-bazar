@@ -4,6 +4,7 @@ import { IoMdMail } from "react-icons/io";
 import img from "../../../public/vector-line.png";
 import "./Contact.css";
 import { CiLocationOn } from "react-icons/ci";
+import Cover from "../../components/Cover";
 
 const Contact = () => {
   return (
@@ -11,7 +12,8 @@ const Contact = () => {
       <Helmet>
         <title>Online Bazar - Contact</title>
       </Helmet>
-      <div className="w-full my-10 md:px-20 px-2">
+      <Cover page="Contact"></Cover>
+      <div className="w-full my-20 md:px-20 px-2">
         <div className="flex flex-col md:flex-row gap-10 justify-center ">
           <div className="md:w-1/2 w-full">
             <h1 className="font-bold text-2xl">Contact Information</h1>
@@ -24,7 +26,7 @@ const Contact = () => {
                 <div>
                   <MdPhoneInTalk className="border border-green-600 size-10 p-2 rounded-full text-green-600 ml-10"></MdPhoneInTalk>
                   <h5 className="my-3 text-xl font-semibold">Phone</h5>
-                  <p className="font-semibold">+1347-430-9510</p>
+                  <p className="font-semibold">+8801972041006</p>
                 </div>
               </div>
               <div className="border border-green-600 rounded-md w-72 h-48 flex justify-center items-center text-center">
@@ -37,7 +39,7 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-            <div className="bg-green-100 p-5 mt-7">
+            <div className="bg-green-50 p-5 mt-7 rounded-md">
               <div className=" mt-5 text-gray-900 flex items-center gap-4">
                 <CiLocationOn className="text-4xl border border-green-600 p-2 rounded-full text-green-600"></CiLocationOn>
                 <div>
@@ -48,10 +50,19 @@ const Contact = () => {
                   </p>
                 </div>
               </div>
+              <div className="my-6">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d275301.79338701285!2d89.88791159284378!3d24.959579734090255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3757d67552cd9be5%3A0x5f5a1e73907e02f1!2sSherpur%20Sadar%20Upazila!5e0!3m2!1sen!2sbd!4v1722410846134!5m2!1sen!2sbd"
+                  width="100%"
+                  height="200"
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
             </div>
           </div>
           <div className="w-full md:w-1/2">
-            <div className="p-10 shadow-2xl ">
+            <div className="p-3 md:p-10 shadow-2xl ">
               <div className="flex flex-col justify-center items-center">
                 <h1 className="text-3xl font-bold">Get In Touch</h1>
                 <img src={img} alt="" />
