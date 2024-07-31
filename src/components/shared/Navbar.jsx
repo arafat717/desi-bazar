@@ -35,7 +35,7 @@ const Navbar = () => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-white font-bold"
+            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-black font-bold"
           >
             <li>
               <Link to="/">Home</Link>
@@ -69,7 +69,7 @@ const Navbar = () => {
             <li>
               <Link>
                 <p className="flex gap-2 items-center">
-                  <FaShoppingCart className="text-2xl text-white"></FaShoppingCart>
+                  <FaShoppingCart className="text-2xl text-black"></FaShoppingCart>
                   <div className="badge badge-secondary">
                     +{cart?.length || 0}
                   </div>
@@ -152,26 +152,34 @@ const Navbar = () => {
           )}
         </ul>
       </div>
-      <div className="navbar-end">
-        {user && (
-          <img
-            src={
-              user?.photoURL ||
-              "https://img.freepik.com/premium-vector/person-icon-vector-design-template-user-sign-person-symbol-human-avatar-flat-style_23648-1744.jpg?w=740"
-            }
-            alt="user image"
-            className={`w-10 rounded-full mr-4 bg-white`}
-          />
-        )}
-        {user ? (
-          <Link onClick={handleLogout} className="btn btn-outline btn-error">
-            LogOut
-          </Link>
-        ) : (
-          <Link to="/login" className="btn btn-outline btn-success">
-            Login
-          </Link>
-        )}
+      <div className="flex items-center navbar-end">
+        <div>
+          {user && (
+            <img
+              src={
+                user?.photoURL ||
+                "https://img.freepik.com/premium-vector/person-icon-vector-design-template-user-sign-person-symbol-human-avatar-flat-style_23648-1744.jpg?w=740"
+              }
+              alt="user image"
+              className={`w-10 rounded-full mr-4 bg-white`}
+            />
+          )}
+        </div>
+        <div>
+          {user ? (
+            <Link onClick={handleLogout}>
+              <button className="bg-yellow-600 py-3 px-5 rounded-sm transition hover:bg-black">
+                LogOut
+              </button>
+            </Link>
+          ) : (
+            <Link to="/login">
+              <button className="bg-yellow-600 py-3 px-5 rounded-sm transition hover:bg-black">
+                Login
+              </button>
+            </Link>
+          )}
+        </div>
       </div>
     </div>
   );
