@@ -14,10 +14,14 @@ const Footer = () => {
     <div>
       <div className="bg-green-600">
         <div className="flex justify-center items-center md:justify-between flex-col md:flex-row px-2 md:px-10 gap-8">
-          <div>
-            <img className="h-[300px]" src={image2} alt="" />
+          <div className="w-1/2 flex justify-center">
+            <img
+              className="md:h-[400px] h-[300px] w-full"
+              src={image2}
+              alt=""
+            />
           </div>
-          <div className="p-20 md:pl-32 md:p-0 flex justify-center text-white">
+          <div className="w-full md:w-1/2 p-2 py-5 mb-10 md:mb-0  md:p-0 flex md:justify-start text-white">
             <div className="md:mr-32">
               <h1 className="text-4xl font-bold">
                 Get 20% Off Discount Coupon
@@ -27,13 +31,13 @@ const Footer = () => {
               </p>
               <div className="flex">
                 <input
-                  className=" p-2  md:p-3 md:w-96 text-black focus:outline-none rounded-sm border border-none hover:border-none focus:border-none"
+                  className=" p-2  md:px-3 md:w-96 md:h-14 text-black focus:outline-none rounded-sm border border-none hover:border-none focus:border-none"
                   type="email"
                   name=""
                   id=""
                   placeholder="Email Address"
                 />
-                <button className=" bg-yellow-600 p-2  md:p-3 text-black font-bold">
+                <button className=" bg-yellow-600  h-14 px-1 w-40 text-black font-bold">
                   Get The coupone
                 </button>
               </div>

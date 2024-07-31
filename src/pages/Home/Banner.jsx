@@ -40,7 +40,7 @@ const Banner = () => {
           <img src={img} alt="" className="mx-auto" />
         </div>
       </div>
-      <div className="text-white bg-green-600 py-6 flex flex-wrap justify-around items-center rounded mt-12 md:mt-32 gap-4 text-left md:gap-0 mx-auto">
+      <div className="text-white bg-green-600 py-6 px-3 flex flex-wrap md:justify-around items-center rounded mt-12 md:mt-32 gap-4 text-left md:gap-0 md:mx-auto">
         <div className="flex text-left items-center gap-3">
           <BsCart3 className="text-[30px] sm:text-[45px] -mt-2"></BsCart3>
           <div>

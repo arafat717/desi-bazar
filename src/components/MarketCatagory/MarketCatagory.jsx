@@ -24,82 +24,73 @@ const MarketCatagory = () => {
           </Link>
         </div>
       </div>
-      <div className="grid grid-cols-2 md:grid-cols-5 gap-3 mx-auto">
+      <div className="grid grid-cols-2 gap-1 md:grid-cols-5 md:gap-3 mx-auto">
         <div className="flex flex-col justify-center items-center cursor-pointer">
-          <div className="w-60 h-60">
+          <div className="w-32 h-32 md:w-60 md:h-60">
             <img
-              className="bg-gray-100 rounded p-14 hover:border border-green-500"
+              className="bg-gray-100 rounded p-4 md:p-14 hover:border border-green-500"
               src={img1}
               alt=""
             />
           </div>
-          <div className="-ml-12">
-            <h1 className="-mt-6 text-xl font-bold text-gray-400">Fruits</h1>
+          <div className="-ml-6 md:-ml-12">
+            <h1 className="md:-mt-6  text-xl font-bold text-gray-400">
+              Fruits
+            </h1>
           </div>
         </div>
         <div className="flex flex-col justify-center items-center cursor-pointer">
-          <div className="w-60 h-60">
+          <div className="w-32 h-32 md:w-60 md:h-60">
             <img
-              className="bg-gray-100 rounded p-14 hover:border border-green-500"
+              className="bg-gray-100 rounded p-4 md:p-14 hover:border border-green-500"
               src={img2}
               alt=""
             />
           </div>
-          <div className="-ml-12">
-            <h1 className="-mt-6 text-xl font-bold text-gray-400">
+          <div className="-ml-6 md:-ml-12">
+            <h1 className="md:-mt-6 text-xl font-bold text-gray-400">
               Vegitables
             </h1>
           </div>
         </div>
         <div className="flex flex-col justify-center items-center cursor-pointer">
-          <div className="w-60 h-60">
+          <div className="w-32 h-32 md:w-60 md:h-60">
             <img
-              className="bg-gray-100 rounded p-14 px-16 hover:border border-green-500"
+              className="bg-gray-100 rounded p-4 md:p-14 hover:border border-green-500"
               src={img3}
               alt=""
             />
           </div>
-          <div className="-ml-12">
-            <h1 className="-mt-6 text-xl font-bold text-gray-400">Drinks</h1>
+          <div className="-ml-6 md:-ml-12">
+            <h1 className="md:-mt-6  text-xl font-bold text-gray-400">Juice</h1>
           </div>
         </div>
         <div className="flex flex-col justify-center items-center cursor-pointer">
-          <div className="w-60 h-60">
+          <div className="w-32 h-32 md:w-60 md:h-60">
             <img
-              className="bg-gray-100 rounded p-14 hover:border border-green-500"
+              className="bg-gray-100 rounded p-4 md:p-14 hover:border border-green-500"
               src={img4}
               alt=""
             />
           </div>
-          <div className="-ml-12">
-            <h1 className="-mt-6 text-xl font-bold text-gray-400">Meat</h1>
+          <div className="-ml-6 md:-ml-12">
+            <h1 className="md:-mt-6 text-xl font-bold text-gray-400">Meat</h1>
           </div>
         </div>
-
         <div className="flex flex-col justify-center items-center cursor-pointer">
-          <div className="w-60 h-60">
+          <div className="w-32 h-32 md:w-60 md:h-60">
             <img
-              className="bg-gray-100 rounded p-14 px-16 hover:border border-green-500"
+              className="bg-gray-100 rounded p-4 md:p-14 hover:border border-green-500"
               src={img5}
               alt=""
             />
           </div>
-          <div className="-ml-12">
-            <h1 className="-mt-6 text-xl font-bold text-gray-400">Coffe</h1>
+          <div className="-ml-6 md:-ml-12">
+            <h1 className="md:-mt-6 text-xl font-bold text-gray-400">
+              Cold Drinks
+            </h1>
           </div>
         </div>
-        {/* <div className="flex flex-col justify-center items-center">
-          <div className="w-60 h-60">
-            <img
-              className="bg-gray-100 rounded p-14 hover:border border-green-500"
-              src={img6}
-              alt=""
-            />
-          </div>
-          <div className="-ml-12">
-            <h1 className="-mt-6 text-xl font-bold text-gray-400">Fruits</h1>
-          </div>
-        </div> */}
       </div>
     </div>
   );
