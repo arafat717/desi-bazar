@@ -1,0 +1,8 @@
+.card1 {
+  overflow: hidden;
+  transition: all;
+}
+
+.card1:hover .image-style {
+  transform: scale(1.15);
+}

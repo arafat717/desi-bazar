@@ -14,19 +14,21 @@ import MordernGrocery from "../../components/MordernGrocery/MordernGrocery";
 const Home = () => {
   return (
     <>
-      <Helmet>
-        <title>Online Bazar - Home</title>
-      </Helmet>
-      <Banner></Banner>
-      <MarketCatagory></MarketCatagory>
-      <ProductBanner></ProductBanner>
-      <AllProduct></AllProduct>
-      <FlashSale></FlashSale>
-      <TopSellingProduct></TopSellingProduct>
-      <FreshGrocery></FreshGrocery>
-      <FruitsSection></FruitsSection>
-      <MordernGrocery></MordernGrocery>
-      <DairyandEggSection></DairyandEggSection>
+      <div className="max-w-[1400px] mx-auto">
+        <Helmet>
+          <title>Online Bazar - Home</title>
+        </Helmet>
+        <Banner></Banner>
+        <MarketCatagory></MarketCatagory>
+        <ProductBanner></ProductBanner>
+        <AllProduct></AllProduct>
+        <FlashSale></FlashSale>
+        <TopSellingProduct></TopSellingProduct>
+        <FreshGrocery></FreshGrocery>
+        <FruitsSection></FruitsSection>
+        <MordernGrocery></MordernGrocery>
+        <DairyandEggSection></DairyandEggSection>
+      </div>
     </>
   );
 };

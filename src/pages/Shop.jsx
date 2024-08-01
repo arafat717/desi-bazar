@@ -16,31 +16,33 @@ const Shop = () => {
         <title>Online Bazar - Shop</title>
       </Helmet>
       <Cover page="Shop"></Cover>
-      <Tabs selectedIndex={tabIndex} onSelect={(index) => setTabIndex(index)}>
-        <p className="flex justify-center items-center gap-5  bg-green-600 text-white font-bold uppercase">
-          <TabList>
-            <Tab>Dairy</Tab>
-            <Tab>Fruits</Tab>
-            <Tab>Meat</Tab>
-            <Tab>Vegitables</Tab>
-          </TabList>
-        </p>
+      <div className="max-w-[1400px] mx-auto">
+        <Tabs selectedIndex={tabIndex} onSelect={(index) => setTabIndex(index)}>
+          <p className="flex justify-center items-center gap-5   text-black font-bold uppercase">
+            <TabList>
+              <Tab>Dairy</Tab>
+              <Tab>Fruits</Tab>
+              <Tab>Meat</Tab>
+              <Tab>Vegitables</Tab>
+            </TabList>
+          </p>
 
-        <div className="min-h-screen">
-          <TabPanel>
-            <AllDairy></AllDairy>
-          </TabPanel>
-          <TabPanel>
-            <AllFruits></AllFruits>
-          </TabPanel>
-          <TabPanel>
-            <AllMeatandSeaFood></AllMeatandSeaFood>
-          </TabPanel>
-          <TabPanel>
-            <AllVegitables></AllVegitables>
-          </TabPanel>
-        </div>
-      </Tabs>
+          <div className="min-h-screen">
+            <TabPanel>
+              <AllDairy></AllDairy>
+            </TabPanel>
+            <TabPanel>
+              <AllFruits></AllFruits>
+            </TabPanel>
+            <TabPanel>
+              <AllMeatandSeaFood></AllMeatandSeaFood>
+            </TabPanel>
+            <TabPanel>
+              <AllVegitables></AllVegitables>
+            </TabPanel>
+          </div>
+        </Tabs>
+      </div>
     </div>
   );
 };

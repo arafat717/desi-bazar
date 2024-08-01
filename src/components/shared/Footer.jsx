@@ -13,7 +13,7 @@ const Footer = () => {
   return (
     <div>
       <div className="bg-green-600">
-        <div className="flex justify-center items-center md:justify-between flex-col md:flex-row px-2 md:px-10 gap-8">
+        <div className="max-w-full mx-auto flex justify-center items-center md:justify-between flex-col md:flex-row px-2 md:px-5 lg:px-10 xl:px-16 2xl:px-40 gap-8">
           <div className="w-1/2 flex justify-center">
             <img
               className="md:h-[400px] h-[300px] w-full"
@@ -49,7 +49,7 @@ const Footer = () => {
         style={{ backgroundColor: "rgba(0, 0, 0, 0.884)" }}
         className=" text-gray-50 "
       >
-        <footer className="px-10 py-16">
+        <footer className="px-10 md:px-5 lg:px-10 xl:px-16 2xl:px-40 py-16">
           <div className="flex flex-wrap flex-col md:flex-row justify-evenly">
             <div>
               <img src={img} alt="" />
@@ -135,7 +135,7 @@ const Footer = () => {
           </div>
         </footer>
         <hr className="text-white w-full" />
-        <div className="py-6 px-5 j md:px-32">
+        <div className="py-6 px-5 md:px-5 lg:px-10 xl:px-16 2xl:px-40">
           <div className="flex justify-center md:justify-between flex-col md:flex-row gap-10">
             <div className="flex items-center gap-4">
               <div className="flex gap-7 flex-col md:flex-row">
