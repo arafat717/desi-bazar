@@ -72,25 +72,6 @@ const router = createBrowserRouter([
           fetch(`https://grocary-server.vercel.app/product/${params.id}`),
       },
       {
-        path: "product/:id",
-        element: <DetailsPage></DetailsPage>,
-        loader: ({ params }) =>
-          fetch(`https://grocary-server.vercel.app/product/${params.id}`),
-      },
-
-      {
-        path: "product/:id",
-        element: <DetailsPage></DetailsPage>,
-        loader: ({ params }) =>
-          fetch(`https://grocary-server.vercel.app/product/${params.id}`),
-      },
-      {
-        path: "product/:id",
-        element: <DetailsPage></DetailsPage>,
-        loader: ({ params }) =>
-          fetch(`https://grocary-server.vercel.app/product/${params.id}`),
-      },
-      {
         path: "/login",
         element: <Login></Login>,
       },
@@ -151,16 +132,6 @@ const router = createBrowserRouter([
         ),
       },
       {
-        path: "/dashboard/product-edit/:id",
-        element: (
-          <AdminRoutes>
-            <DairyEdit></DairyEdit>
-          </AdminRoutes>
-        ),
-        loader: ({ params }) =>
-          fetch(`https://grocary-server.vercel.app/product/${params.id}`),
-      },
-      {
         path: "/dashboard/user-edit/:id",
         element: <EditProfile></EditProfile>,
         loader: ({ params }) =>
@@ -174,21 +145,15 @@ const router = createBrowserRouter([
           </AdminRoutes>
         ),
       },
-      {
-        path: "/dashboard/product-edit/:id",
-        element: <DairyEdit></DairyEdit>,
-        loader: ({ params }) =>
-          fetch(`https://grocary-server.vercel.app/product/${params.id}`),
-      },
+      // {
+      //   path: "/dashboard/product-edit/:id",
+      //   element: <DairyEdit></DairyEdit>,
+      //   loader: ({ params }) =>
+      //     fetch(`https://grocary-server.vercel.app/product/${params.id}`),
+      // },
       {
         path: "/dashboard/meat-manage",
         element: <MeatManage></MeatManage>,
-      },
-      {
-        path: "/dashboard/product-edit/:id",
-        element: <DairyEdit></DairyEdit>,
-        loader: ({ params }) =>
-          fetch(`http://localhost:3000/product/${params.id}`),
       },
       {
         path: "/dashboard/add-dairy",

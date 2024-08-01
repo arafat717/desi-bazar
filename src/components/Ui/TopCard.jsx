@@ -92,10 +92,10 @@ const TopCard = ({ pro }) => {
     //   </div>
     // </div>
     <div className="flex bg-green-100 shadow-md h-[200px] topCard cursor-pointer hover:border border-green-500">
-      <div>
+      <div className="w-1/2">
         <img src={image} className="w-[190px] h-full" alt="" />
       </div>
-      <div>
+      <div className="w-1/2">
         <div className="p-5 text-left">
           <div className="flex text-yellow-500 text-[16px] gap-1">
             <IoStarSharp></IoStarSharp>
@@ -116,7 +116,7 @@ const TopCard = ({ pro }) => {
           </p>
           <button
             onClick={() => handleAddToCart(pro)}
-            className="customButton w-[200px] h-[40px] flex items-center justify-center gap-2 rounded bg-green-300 transition hover:bg-green-700 hover:text-white mt-5"
+            className="customButton w-[150px] h-[40px]  sm:w-[120px] sm:h-[40px] md:w-[120px] md:h-[40px] lg:w-[150px] lg:h-[40px] flex items-center justify-center gap-2 rounded bg-green-300 transition hover:bg-green-700 hover:text-white mt-5"
           >
             <FaPlus className="mt-[2px]"></FaPlus>
             <span>Add To Cart</span>

@@ -28,7 +28,7 @@ const FruitsSection = () => {
           </Link>
         </div>
       </div>
-      <div className="grid md:grid-cols-3 sm:grid-cols-2 lg:grid-cols-4 mx-auto gap-2 mt-8 mb-20 px-16">
+      <div className="grid gap-4 md:grid-cols-3 sm:grid-cols-2 sm:gap-4 items-center justify-center lg:grid-cols-4 mx-auto px-2 md:px-4 lg:px-10 mt-8 mb-20">
         {seaFood &&
           seaFood
             .slice(0, 4)

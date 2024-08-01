@@ -17,13 +17,13 @@ const AllDairy = () => {
       <Helmet>
         <title>Online Bazar - Dairy</title>
       </Helmet>
-      <div>
+      {/* <div>
         <h1 className="px-10 text-2xl font-bold">
           Best <span className="text-green-500">Dairy</span> from us
         </h1>
         <hr className="w-[200px] ml-10 border border-green-300 mt-2" />
-      </div>
-      <div className="grid md:grid-cols-3 sm:grid-cols-2 lg:grid-cols-5 mx-auto gap-2 mt-16 mb-20 px-10">
+      </div> */}
+      <div className="grid gap-4 md:grid-cols-3 sm:grid-cols-2 sm:gap-4 items-center justify-center lg:grid-cols-4 mx-auto px-2 md:px-4 lg:px-10 -mt-10 mb-20">
         {seaFood &&
           seaFood.map((food) => <Card key={food._id} food={food}></Card>)}
       </div>

@@ -17,25 +17,29 @@ const Shop = () => {
       </Helmet>
       <Cover page="Shop"></Cover>
       <Tabs selectedIndex={tabIndex} onSelect={(index) => setTabIndex(index)}>
-        <TabList>
-          <Tab>Dairy</Tab>
-          <Tab>Fruits</Tab>
-          <Tab>Meat</Tab>
-          <Tab>Vegitables</Tab>
-        </TabList>
+        <p className="flex justify-center items-center gap-5  bg-green-600 text-white font-bold uppercase">
+          <TabList>
+            <Tab>Dairy</Tab>
+            <Tab>Fruits</Tab>
+            <Tab>Meat</Tab>
+            <Tab>Vegitables</Tab>
+          </TabList>
+        </p>
 
-        <TabPanel>
-          <AllDairy></AllDairy>
-        </TabPanel>
-        <TabPanel>
-          <AllFruits></AllFruits>
-        </TabPanel>
-        <TabPanel>
-          <AllVegitables></AllVegitables>
-        </TabPanel>
-        <TabPanel>
-          <AllMeatandSeaFood></AllMeatandSeaFood>
-        </TabPanel>
+        <div className="min-h-screen">
+          <TabPanel>
+            <AllDairy></AllDairy>
+          </TabPanel>
+          <TabPanel>
+            <AllFruits></AllFruits>
+          </TabPanel>
+          <TabPanel>
+            <AllMeatandSeaFood></AllMeatandSeaFood>
+          </TabPanel>
+          <TabPanel>
+            <AllVegitables></AllVegitables>
+          </TabPanel>
+        </div>
       </Tabs>
     </div>
   );
