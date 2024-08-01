@@ -1,6 +1,6 @@
 import img1 from "../../../public/blog-img-1.webp";
 import img2 from "../../../public/blog-img-2.webp";
-import img3 from "../../../public/blog-img-2.webp";
+import img3 from "../../../public/blog-img-3.webp";
 import { IoPersonOutline } from "react-icons/io5";
 import { BiCommentDetail } from "react-icons/bi";
 import { FaArrowRightLong } from "react-icons/fa6";
@@ -8,7 +8,7 @@ import "./BlogSection.css";
 
 const BlogSection = () => {
   return (
-    <div className="my-10">
+    <div className="my-20">
       <div className="grid grid-cols-1 sm:grid-cols-2 px-2 md:px-10 md:grid-cols-2 lg:grid-cols-3 gap-4 justify-center items-center">
         <div className="w-[350px] sm:w-[320px] md:w-[400px] bg-white shadow-lg cursor-pointer card1 rounded">
           <div className="overflow-hidden">
@@ -39,7 +39,7 @@ const BlogSection = () => {
         </div>
         <div className="w-[350px] sm:w-[320px] md:w-[400px] bg-white shadow-lg cursor-pointer card1 rounded">
           <div className="overflow-hidden">
-            <img className="image-style" src={img1} alt="" />
+            <img className="image-style" src={img2} alt="" />
           </div>
           <div className="p-6">
             <div className="flex justify-start gap-10">
@@ -66,7 +66,7 @@ const BlogSection = () => {
         </div>
         <div className="w-[350px] sm:w-[320px] md:w-[400px] bg-white shadow-lg cursor-pointer card1 rounded">
           <div className="overflow-hidden">
-            <img className="image-style" src={img1} alt="" />
+            <img className="image-style" src={img3} alt="" />
           </div>
           <div className="p-6">
             <div className="flex justify-start gap-10">
