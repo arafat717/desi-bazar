@@ -9,6 +9,11 @@ import "./BlogSection.css";
 const BlogSection = () => {
   return (
     <div className="my-20">
+      <div className="flex justify-center items-center mb-10">
+        <h1 className="text-4xl font-bold text-gray-900 hover:text-green-600">
+          My Latest News
+        </h1>
+      </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 px-2 md:px-10 md:grid-cols-2 lg:grid-cols-3 gap-4 justify-center items-center">
         <div className="w-[350px] sm:w-[320px] md:w-[400px] bg-white shadow-lg cursor-pointer card1 rounded">
           <div className="overflow-hidden">

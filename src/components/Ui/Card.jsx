@@ -83,7 +83,9 @@ const Card = ({ food }) => {
     //   </div>
     // </div>
     <div className="mainCard h-[370px] w-[290px] transition-all">
-      <img src={image} className="w-full h-[180px] image-style" alt="" />
+      <div className="overflow-hidden">
+        <img src={image} className="w-full h-[180px] image-style" alt="" />
+      </div>
       <div className="p-5 text-center">
         <div className="flex justify-center text-yellow-500 text-[16px] gap-1">
           <IoStarSharp></IoStarSharp>

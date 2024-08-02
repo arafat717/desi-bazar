@@ -27,6 +27,7 @@ import AdminRoutes from "./AdminRoutes";
 import Payment from "../components/DashboardLayout/Payment/Payment";
 import UserHome from "../components/DashboardLayout/UserHome/UserHome";
 import AdminHome from "../components/DashboardLayout/AdminHome/AdminHome";
+import BlogPage from "../components/BlogPage/BlogPage";
 
 const router = createBrowserRouter([
   {
@@ -64,6 +65,10 @@ const router = createBrowserRouter([
       {
         path: "/shop",
         element: <Shop></Shop>,
+      },
+      {
+        path: "/blogs",
+        element: <BlogPage></BlogPage>,
       },
       {
         path: "product/:id",
