@@ -1,0 +1,8 @@
+/* ReviewSlider.css */
+.slide-next {
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide-prev {
+  transition: transform 0.5s ease-in-out;
+}

@@ -14,8 +14,8 @@ const BlogPage = () => {
     <div>
       <Cover page="Our Blogs"></Cover>
       <div className="max-w-[1400px] mx-auto">
-        <div className="grid grid-cols-1 sm:grid-cols-2 px-2 md:px-10 md:grid-cols-2 lg:grid-cols-3 gap-7 justify-center items-center my-20">
-          <div className="w-[350px] sm:w-[320px] md:w-[400px] bg-white shadow-lg cursor-pointer card1 rounded">
+        <div className="grid grid-cols-1 sm:grid-cols-2 px-3 md:px-10 md:grid-cols-2 lg:grid-cols-3 gap-7 justify-center items-center my-20 mx-auto">
+          <div className="w-[340px] sm:w-[320px] md:w-[400px] bg-white shadow-lg cursor-pointer card1 rounded ">
             <div className="overflow-hidden">
               <img className="image-style" src={img1} alt="" />
             </div>
@@ -42,7 +42,7 @@ const BlogPage = () => {
               </div>
             </div>
           </div>
-          <div className="w-[350px] sm:w-[320px] md:w-[400px] bg-white shadow-lg cursor-pointer card1 rounded">
+          <div className="w-[340px] sm:w-[320px] md:w-[400px] bg-white shadow-lg cursor-pointer card1 rounded">
             <div className="overflow-hidden">
               <img className="image-style" src={img2} alt="" />
             </div>
@@ -69,7 +69,7 @@ const BlogPage = () => {
               </div>
             </div>
           </div>
-          <div className="w-[350px] sm:w-[320px] md:w-[400px] bg-white shadow-lg cursor-pointer card1 rounded">
+          <div className="w-[340px] sm:w-[320px] md:w-[400px] bg-white shadow-lg cursor-pointer card1 rounded">
             <div className="overflow-hidden">
               <img className="image-style" src={img3} alt="" />
             </div>
@@ -96,7 +96,7 @@ const BlogPage = () => {
               </div>
             </div>
           </div>
-          <div className="w-[350px] sm:w-[320px] md:w-[400px] bg-white shadow-lg cursor-pointer card1 rounded">
+          <div className="w-[340px] sm:w-[320px] md:w-[400px] bg-white shadow-lg cursor-pointer card1 rounded">
             <div className="overflow-hidden">
               <img className="image-style" src={img4} alt="" />
             </div>
@@ -123,7 +123,7 @@ const BlogPage = () => {
               </div>
             </div>
           </div>
-          <div className="w-[350px] sm:w-[320px] md:w-[400px] bg-white shadow-lg cursor-pointer card1 rounded">
+          <div className="w-[340px] sm:w-[320px] md:w-[400px] bg-white shadow-lg cursor-pointer card1 rounded">
             <div className="overflow-hidden">
               <img className="image-style" src={img5} alt="" />
             </div>
@@ -150,7 +150,7 @@ const BlogPage = () => {
               </div>
             </div>
           </div>
-          <div className="w-[350px] sm:w-[320px] md:w-[400px] bg-white shadow-lg cursor-pointer card1 rounded">
+          <div className="w-[340px] sm:w-[320px] md:w-[400px] bg-white shadow-lg cursor-pointer card1 rounded">
             <div className="overflow-hidden">
               <img className="image-style" src={img6} alt="" />
             </div>

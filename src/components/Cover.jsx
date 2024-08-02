@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Cover = ({ page }) => {
   return (
     <div
-      className="hero h-[140px] md:h-[300px]"
+      className="hero h-[140px] md:h-[250px]"
       style={{
         backgroundImage:
           "url(https://img.freepik.com/free-photo/supermarket-banner-concept-with-ingredients_23-2149421131.jpg?t=st=1719153940~exp=1719157540~hmac=46f69d937ec4b3910bb6c38c0290c28812005df782e8b2d71aebadf392e707e4&w=826)",
